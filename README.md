@@ -1,4 +1,4 @@
-# Proyecto de Web Scraping - Cuevanaseries
+# Proyecto de Web Scraping - Peliculas
 
 ## Descripción
 
