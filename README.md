@@ -29,7 +29,8 @@ Este proyecto realiza scraping del sitio web [Cuevanaseries.tv](https://cuevanas
 
 1. Clonar el repositorio:
     ```bash
-    git clone [https://github.com/walterrivarola/WebScrapingMoviesKafkaSparkAirflow.git](https://github.com/walterrivarola/WebScrapingMoviesKafkaSparkAirflow.git)
+    git clone https://github.com/walterrivarola/WebScrapingMoviesKafkaSparkAirflow.git
+    
     cd WebScrapingMoviesKafkaSparkAirflow
     ```
 
