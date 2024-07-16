@@ -1,0 +1,35 @@
+[2024-07-01T20:29:12.468-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T20:29:12.482-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T20:29:12.492-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T20:29:12.492-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T20:29:12.537-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): insert_into_mysql> on 2024-07-01 14:00:00+00:00
+[2024-07-01T20:29:12.543-0400] {standard_task_runner.py:63} INFO - Started process 417302 to run task
+[2024-07-01T20:29:12.546-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'insert_into_mysql', 'scheduled__2024-07-01T14:00:00+00:00', '--job-id', '732', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp_l54iy91']
+[2024-07-01T20:29:12.548-0400] {standard_task_runner.py:91} INFO - Job 732: Subtask insert_into_mysql
+[2024-07-01T20:29:12.620-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T20:29:12.680-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='insert_into_mysql' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T14:00:00+00:00'
+[2024-07-01T20:29:12.681-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T20:29:12.698-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T20:29:12.699-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T20:29:12.705-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T20:29:12.720-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=insert_into_mysql, run_id=scheduled__2024-07-01T14:00:00+00:00, execution_date=20240701T140000, start_date=20240702T002912, end_date=20240702T002912
+[2024-07-01T20:29:12.771-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T20:29:12.787-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T20:29:12.825-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:22:04.696-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:22:04.711-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T23:22:04.716-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T23:22:04.717-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:22:04.734-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): insert_into_mysql> on 2024-07-01 14:00:00+00:00
+[2024-07-01T23:22:04.739-0400] {standard_task_runner.py:63} INFO - Started process 452056 to run task
+[2024-07-01T23:22:04.742-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'insert_into_mysql', 'scheduled__2024-07-01T14:00:00+00:00', '--job-id', '874', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpt12wsh7v']
+[2024-07-01T23:22:04.744-0400] {standard_task_runner.py:91} INFO - Job 874: Subtask insert_into_mysql
+[2024-07-01T23:22:04.777-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.insert_into_mysql scheduled__2024-07-01T14:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:22:04.854-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='insert_into_mysql' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T14:00:00+00:00'
+[2024-07-01T23:22:04.854-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:22:04.943-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:22:04.944-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:22:04.948-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=insert_into_mysql, run_id=scheduled__2024-07-01T14:00:00+00:00, execution_date=20240701T140000, start_date=20240702T032204, end_date=20240702T032204
+[2024-07-01T23:22:05.006-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:22:05.021-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:22:05.028-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

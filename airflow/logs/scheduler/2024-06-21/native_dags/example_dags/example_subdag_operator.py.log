@@ -1,0 +1,18 @@
+[2024-06-21T16:09:58.979-0400] {processor.py:161} INFO - Started process (PID=25108) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-06-21T16:09:58.980-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py for tasks to queue
+[2024-06-21T16:09:58.989-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:58.989-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-06-21T16:09:59.039-0400] {processor.py:840} INFO - DAG(s) 'example_subdag_operator.section-1', 'example_subdag_operator.section-2', 'example_subdag_operator' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py
+[2024-06-21T16:09:59.155-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.155-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_subdag_operator
+[2024-06-21T16:09:59.169-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.168-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_subdag_operator
+[2024-06-21T16:09:59.182-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.181-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_subdag_operator
+[2024-06-21T16:09:59.182-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.182-0400] {dag.py:3096} INFO - Sync 3 DAGs
+[2024-06-21T16:09:59.189-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.189-0400] {dag.py:3118} INFO - Creating ORM DAG for example_subdag_operator.section-1
+[2024-06-21T16:09:59.190-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.189-0400] {dag.py:3118} INFO - Creating ORM DAG for example_subdag_operator
+[2024-06-21T16:09:59.191-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.190-0400] {dag.py:3118} INFO - Creating ORM DAG for example_subdag_operator.section-2
+[2024-06-21T16:09:59.196-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.196-0400] {dag.py:3954} INFO - Setting next_dagrun for example_subdag_operator to 2022-01-01 00:00:00+00:00, run_after=2022-01-01 00:00:00+00:00
+[2024-06-21T16:09:59.196-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.196-0400] {dag.py:3954} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-06-21T16:09:59.197-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.196-0400] {dag.py:3954} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-06-21T16:09:59.201-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.200-0400] {dag.py:3096} INFO - Sync 2 DAGs
+[2024-06-21T16:09:59.203-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.203-0400] {dag.py:3954} INFO - Setting next_dagrun for example_subdag_operator.section-1 to None, run_after=None
+[2024-06-21T16:09:59.205-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:59.205-0400] {dag.py:3954} INFO - Setting next_dagrun for example_subdag_operator.section-2 to None, run_after=None
+[2024-06-21T16:09:59.227-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_subdag_operator.py took 0.264 seconds

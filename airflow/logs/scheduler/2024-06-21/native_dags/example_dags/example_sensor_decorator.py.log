@@ -1,0 +1,11 @@
+[2024-06-21T16:10:07.970-0400] {processor.py:161} INFO - Started process (PID=25129) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-06-21T16:10:07.971-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py for tasks to queue
+[2024-06-21T16:10:07.973-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:07.972-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-06-21T16:10:07.983-0400] {processor.py:840} INFO - DAG(s) 'example_sensor_decorator' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py
+[2024-06-21T16:10:08.097-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.096-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_sensor_decorator
+[2024-06-21T16:10:08.112-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.111-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_sensor_decorator
+[2024-06-21T16:10:08.123-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.123-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_sensor_decorator
+[2024-06-21T16:10:08.124-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.124-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:10:08.134-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.134-0400] {dag.py:3118} INFO - Creating ORM DAG for example_sensor_decorator
+[2024-06-21T16:10:08.135-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:08.135-0400] {dag.py:3954} INFO - Setting next_dagrun for example_sensor_decorator to None, run_after=None
+[2024-06-21T16:10:08.157-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_sensor_decorator.py took 0.192 seconds

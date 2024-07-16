@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: bitnami/zookeeper:latest
+    ports:
+      - "2181:2181"
+    environment:
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+    volumes:
+      - ./data/zookeeper:/bitnami/zookeeper
+
+  kafka1:
+    image: bitnami/kafka:latest
+    ports:
+      - "9091:9091"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9091
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_LOG_DIRS: /bitnami/kafka/data/kafka/broker_1
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+    volumes:
+      - ./data/kafka/broker_1:/bitnami/kafka/data/kafka/broker_1
+
+  kafka2:
+    image: bitnami/kafka:latest
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 2
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:9092
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_LOG_DIRS: /bitnami/kafka/data/kafka/broker_2
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+    volumes:
+      - ./data/kafka/broker_2:/bitnami/kafka/data/kafka/broker_2
+
+  kafka3:
+    image: bitnami/kafka:latest
+    ports:
+      - "9093:9093"
+    environment:
+      KAFKA_BROKER_ID: 3
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka3:9093
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+      KAFKA_LOG_DIRS: /bitnami/kafka/data/kafka/broker_3
+      KAFKA_DELETE_TOPIC_ENABLE: 'true'
+    volumes:
+      - ./data/kafka/broker_3:/bitnami/kafka/data/kafka/broker_3
+
+  spark-master:
+    image: bitnami/spark:latest
+    ports:
+      - "7077:7077"
+      - "9090:8080"
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_PORT=7077
+      - SPARK_MASTER_WEBUI_PORT=9090
+    volumes:
+      - ./data/spark-master:/bitnami/spark
+
+  spark-worker:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_PORT=7078
+      - SPARK_WORKER_WEBUI_PORT=9091
+    ports:
+      - "7078:7078"
+      - "9091:8081"
+    volumes:
+      - ./data/spark-worker:/bitnami/spark
+    depends_on:
+      - spark-master

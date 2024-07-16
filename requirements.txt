@@ -1,0 +1,12 @@
+pprint
+requests
+json
+mysql-connector-python
+datetime
+apache-airflow
+confluent-kafka
+pyspark
+beautifulsoup4
+re
+fastapi
+uvicorn

@@ -1,0 +1,123 @@
+[2024-06-27T15:39:32.661-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T15:39:32.710-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T15:39:32.722-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T15:39:32.723-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T15:39:32.814-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-27T15:39:32.836-0400] {standard_task_runner.py:63} INFO - Started process 185735 to run task
+[2024-06-27T15:39:32.844-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp2v16m49l']
+[2024-06-27T15:39:32.856-0400] {standard_task_runner.py:91} INFO - Job 100: Subtask run_kafka_producer
+[2024-06-27T15:39:32.951-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T15:39:33.085-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-27T15:39:33.086-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T15:39:33.103-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T15:39:33.105-0400] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 41, in json_serialization
+    producer = Producer(producer_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+cimpl.KafkaException: KafkaError{code=_INVALID_ARG,val=-186,str="No such configuration property: "bootstrap_server""}
+[2024-06-27T15:39:33.118-0400] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240627T193932, end_date=20240627T193933
+[2024-06-27T15:39:33.240-0400] {standard_task_runner.py:110} ERROR - Failed to execute job 100 for task run_kafka_producer (KafkaError{code=_INVALID_ARG,val=-186,str="No such configuration property: "bootstrap_server""}; 185735)
+[2024-06-27T15:39:33.291-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-27T15:39:33.331-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T15:39:33.332-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T16:01:40.278-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T16:01:40.300-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T16:01:40.307-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T16:01:40.307-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T16:01:40.359-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-27T16:01:40.369-0400] {standard_task_runner.py:63} INFO - Started process 188742 to run task
+[2024-06-27T16:01:40.371-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp5v6fjiiy']
+[2024-06-27T16:01:40.379-0400] {standard_task_runner.py:91} INFO - Job 163: Subtask run_kafka_producer
+[2024-06-27T16:01:40.472-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T16:01:40.706-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-27T16:01:40.707-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T16:01:40.815-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T16:01:40.816-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T16:01:40.822-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240627T200140, end_date=20240627T200140
+[2024-06-27T16:01:40.899-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T16:01:40.919-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T16:01:40.923-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T21:34:36.138-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T21:34:36.169-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T21:34:36.177-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-27T21:34:36.181-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T21:34:36.209-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-27T21:34:36.220-0400] {standard_task_runner.py:63} INFO - Started process 217651 to run task
+[2024-06-27T21:34:36.223-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '315', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmptzk37vgt']
+[2024-06-27T21:34:36.225-0400] {standard_task_runner.py:91} INFO - Job 315: Subtask run_kafka_producer
+[2024-06-27T21:34:36.331-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T21:34:36.450-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-27T21:34:36.451-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T21:34:36.586-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T21:34:36.588-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T21:34:36.596-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240628T013436, end_date=20240628T013436
+[2024-06-27T21:34:36.708-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T21:34:36.737-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T21:34:36.769-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T10:28:59.975-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T10:29:00.011-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T10:29:00.024-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T10:29:00.027-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T10:29:00.110-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-28T10:29:00.126-0400] {standard_task_runner.py:63} INFO - Started process 233208 to run task
+[2024-06-28T10:29:00.131-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '409', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp72gruz9e']
+[2024-06-28T10:29:00.136-0400] {standard_task_runner.py:91} INFO - Job 409: Subtask run_kafka_producer
+[2024-06-28T10:29:00.261-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T10:29:00.424-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-28T10:29:00.425-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T10:29:00.567-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T10:29:00.569-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T10:29:00.587-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240628T142900, end_date=20240628T142900
+[2024-06-28T10:29:00.657-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T10:29:00.676-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T10:29:00.697-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T11:07:00.611-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T11:07:00.627-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T11:07:00.633-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T11:07:00.633-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T11:07:00.666-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-28T11:07:00.675-0400] {standard_task_runner.py:63} INFO - Started process 238757 to run task
+[2024-06-28T11:07:00.680-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '488', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp40782xrr']
+[2024-06-28T11:07:00.682-0400] {standard_task_runner.py:91} INFO - Job 488: Subtask run_kafka_producer
+[2024-06-28T11:07:00.755-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T11:07:00.904-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-28T11:07:00.905-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T11:07:01.000-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T11:07:01.000-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T11:07:01.013-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240628T150700, end_date=20240628T150701
+[2024-06-28T11:07:01.065-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T11:07:01.090-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T11:07:01.107-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T11:23:05.535-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T11:23:05.551-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T11:23:05.558-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [queued]>
+[2024-06-28T11:23:05.559-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T11:23:05.592-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_kafka_producer> on 2024-06-27 00:04:30+00:00
+[2024-06-28T11:23:05.601-0400] {standard_task_runner.py:63} INFO - Started process 242560 to run task
+[2024-06-28T11:23:05.605-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'run_kafka_producer', 'scheduled__2024-06-27T00:04:30+00:00', '--job-id', '538', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp42heh73i']
+[2024-06-28T11:23:05.606-0400] {standard_task_runner.py:91} INFO - Job 538: Subtask run_kafka_producer
+[2024-06-28T11:23:05.703-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.run_kafka_producer scheduled__2024-06-27T00:04:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T11:23:05.835-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='run_kafka_producer' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:04:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:04:30+00:00'
+[2024-06-28T11:23:05.836-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T11:23:05.928-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T11:23:05.934-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T11:23:05.939-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=run_kafka_producer, run_id=scheduled__2024-06-27T00:04:30+00:00, execution_date=20240627T000430, start_date=20240628T152305, end_date=20240628T152305
+[2024-06-28T11:23:06.049-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T11:23:06.107-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T11:23:06.151-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

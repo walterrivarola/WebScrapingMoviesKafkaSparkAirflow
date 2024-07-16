@@ -1,0 +1,26 @@
+0
+24
+__consumer_offsets 0 6
+movie-urls 2 133
+__consumer_offsets 30 0
+__consumer_offsets 18 6
+__consumer_offsets 21 0
+__consumer_offsets 6 3
+__consumer_offsets 48 0
+kafka-spark 2 0
+__consumer_offsets 33 0
+airflow-kafka-spark 0 629
+__consumer_offsets 24 0
+movie-details 2 128
+__consumer_offsets 3 3
+__consumer_offsets 27 1242
+__consumer_offsets 42 0
+airflow-kafka-spark 1 610
+kafka-integration-spark 1 0
+__consumer_offsets 39 0
+__consumer_offsets 15 247
+__consumer_offsets 12 3
+__consumer_offsets 36 0
+__consumer_offsets 45 0
+__consumer_offsets 9 0
+meteoblue_topic 0 2

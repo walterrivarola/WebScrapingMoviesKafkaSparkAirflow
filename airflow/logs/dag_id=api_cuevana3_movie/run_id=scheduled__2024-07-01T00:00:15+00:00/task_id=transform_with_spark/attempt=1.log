@@ -1,0 +1,127 @@
+[2024-07-01T23:52:01.027-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:52:01.049-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-01T23:52:01.062-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-01T23:52:01.063-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:52:01.084-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-01T23:52:01.092-0400] {standard_task_runner.py:63} INFO - Started process 465312 to run task
+[2024-07-01T23:52:01.103-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '919', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpc5gh1tn1']
+[2024-07-01T23:52:01.107-0400] {standard_task_runner.py:91} INFO - Job 919: Subtask transform_with_spark
+[2024-07-01T23:52:01.172-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:52:01.315-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-01T23:52:01.316-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:52:01.356-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T23:52:01.357-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:52:01.359-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:52:01.370-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T035201, end_date=20240702T035201
+[2024-07-01T23:52:01.455-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:52:01.471-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:52:01.472-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T09:22:47.166-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T09:22:47.196-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T09:22:47.205-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T09:22:47.205-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T09:22:47.249-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T09:22:47.256-0400] {standard_task_runner.py:63} INFO - Started process 475897 to run task
+[2024-07-02T09:22:47.272-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '951', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpup5xxxle']
+[2024-07-02T09:22:47.275-0400] {standard_task_runner.py:91} INFO - Job 951: Subtask transform_with_spark
+[2024-07-02T09:22:47.353-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T09:22:47.599-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T09:22:47.601-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T09:22:47.653-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T09:22:47.654-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T09:22:47.655-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T09:22:47.661-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T132247, end_date=20240702T132247
+[2024-07-02T09:22:47.762-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T09:22:47.806-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T09:22:47.815-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T09:31:59.813-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T09:31:59.831-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T09:31:59.836-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T09:31:59.836-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T09:31:59.876-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T09:31:59.886-0400] {standard_task_runner.py:63} INFO - Started process 479321 to run task
+[2024-07-02T09:31:59.891-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '957', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp9d3c0mdz']
+[2024-07-02T09:31:59.894-0400] {standard_task_runner.py:91} INFO - Job 957: Subtask transform_with_spark
+[2024-07-02T09:32:00.007-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T09:32:00.125-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T09:32:00.127-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T09:32:00.154-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T09:32:00.154-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T09:32:00.155-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T09:32:00.160-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T133159, end_date=20240702T133200
+[2024-07-02T09:32:00.218-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T09:32:00.239-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T09:32:00.240-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T10:16:06.493-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T10:16:06.522-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:16:06.531-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:16:06.534-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T10:16:06.553-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T10:16:06.559-0400] {standard_task_runner.py:63} INFO - Started process 492085 to run task
+[2024-07-02T10:16:06.562-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '1137', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp0yz_7_0m']
+[2024-07-02T10:16:06.564-0400] {standard_task_runner.py:91} INFO - Job 1137: Subtask transform_with_spark
+[2024-07-02T10:16:06.635-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T10:16:06.752-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T10:16:06.754-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T10:16:06.773-0400] {logging_mixin.py:188} INFO - 'JSON_DATA: None'
+[2024-07-02T10:16:06.774-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T10:16:06.774-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T10:16:06.774-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T10:16:06.777-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T141606, end_date=20240702T141606
+[2024-07-02T10:16:06.878-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T10:16:06.905-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T10:16:06.907-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T10:36:19.418-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T10:36:19.469-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:36:19.475-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:36:19.475-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T10:36:19.531-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T10:36:19.546-0400] {standard_task_runner.py:63} INFO - Started process 496732 to run task
+[2024-07-02T10:36:19.549-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '1161', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpan1sw3x6']
+[2024-07-02T10:36:19.555-0400] {standard_task_runner.py:91} INFO - Job 1161: Subtask transform_with_spark
+[2024-07-02T10:36:19.615-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T10:36:19.725-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T10:36:19.726-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T10:36:19.761-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T10:36:19.763-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T10:36:19.763-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T10:36:19.775-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T143619, end_date=20240702T143619
+[2024-07-02T10:36:19.896-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T10:36:19.912-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T10:36:19.913-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T10:54:11.300-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T10:54:11.315-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:54:11.319-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T10:54:11.320-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T10:54:11.354-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T10:54:11.360-0400] {standard_task_runner.py:63} INFO - Started process 500312 to run task
+[2024-07-02T10:54:11.362-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '1326', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpzv1ke9d1']
+[2024-07-02T10:54:11.364-0400] {standard_task_runner.py:91} INFO - Job 1326: Subtask transform_with_spark
+[2024-07-02T10:54:11.435-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T10:54:11.539-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T10:54:11.540-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T10:54:11.555-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T10:54:11.556-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T10:54:11.556-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T10:54:11.559-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T145411, end_date=20240702T145411
+[2024-07-02T10:54:11.588-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T10:54:11.600-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T10:54:11.601-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T11:26:18.020-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T11:26:18.036-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T11:26:18.042-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [queued]>
+[2024-07-02T11:26:18.043-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T11:26:18.070-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 00:00:15+00:00
+[2024-07-02T11:26:18.078-0400] {standard_task_runner.py:63} INFO - Started process 503373 to run task
+[2024-07-02T11:26:18.082-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T00:00:15+00:00', '--job-id', '1351', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp7zfa5l6s']
+[2024-07-02T11:26:18.083-0400] {standard_task_runner.py:91} INFO - Job 1351: Subtask transform_with_spark
+[2024-07-02T11:26:18.191-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T00:00:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T11:26:18.279-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:15+00:00'
+[2024-07-02T11:26:18.280-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T11:26:18.296-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T11:26:18.296-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T11:26:18.297-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T11:26:18.302-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T00:00:15+00:00, execution_date=20240701T000015, start_date=20240702T152618, end_date=20240702T152618
+[2024-07-02T11:26:18.390-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T11:26:18.407-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T11:26:18.408-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

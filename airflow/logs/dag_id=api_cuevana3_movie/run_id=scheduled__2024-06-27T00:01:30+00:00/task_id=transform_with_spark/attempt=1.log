@@ -1,0 +1,180 @@
+[2024-06-27T20:36:06.243-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T20:36:06.271-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T20:36:06.283-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T20:36:06.284-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T20:36:06.324-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-27T20:36:06.338-0400] {standard_task_runner.py:63} INFO - Started process 207846 to run task
+[2024-06-27T20:36:06.341-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '239', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpbrp2ggvd']
+[2024-06-27T20:36:06.343-0400] {standard_task_runner.py:91} INFO - Job 239: Subtask transform_with_spark
+[2024-06-27T20:36:06.392-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T20:36:06.530-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-27T20:36:06.531-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T20:36:15.363-0400] {logging_mixin.py:188} INFO - Error al transformar datos con Spark: name 'udf' is not defined
+[2024-06-27T20:36:15.365-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T20:36:15.366-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T20:36:15.384-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T003606, end_date=20240628T003615
+[2024-06-27T20:36:15.460-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T20:36:15.471-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T20:36:15.475-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T21:11:11.266-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T21:11:11.286-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T21:11:11.301-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T21:11:11.302-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T21:11:11.331-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-27T21:11:11.341-0400] {standard_task_runner.py:63} INFO - Started process 214132 to run task
+[2024-06-27T21:11:11.346-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '302', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpblba8o4p']
+[2024-06-27T21:11:11.348-0400] {standard_task_runner.py:91} INFO - Job 302: Subtask transform_with_spark
+[2024-06-27T21:11:11.405-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T21:11:11.503-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-27T21:11:11.504-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T21:11:26.225-0400] {logging_mixin.py:188} INFO - Error al transformar datos con Spark: 
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1239, in process
+    serializer.dump_stream(out_iter, outfile)
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 225, in dump_stream
+    self.serializer.dump_stream(self._batched(iterator), stream)
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 146, in dump_stream
+    for obj in iterator:
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 214, in _batched
+    for item in iterator:
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1070, in mapper
+    result = tuple(f(*[a[o] for o in arg_offsets]) for (arg_offsets, f) in udfs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1070, in <genexpr>
+    result = tuple(f(*[a[o] for o in arg_offsets]) for (arg_offsets, f) in udfs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/worker.py", line 106, in <lambda>
+    return lambda *a: f(*a)
+                      ^^^^^
+  File "/home/walter/Descargas/spark/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+TypeError: transform_with_spark.<locals>.clean_description() takes 0 positional arguments but 1 was given
+[2024-06-27T21:11:26.225-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T21:11:26.226-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T21:11:26.238-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T011111, end_date=20240628T011126
+[2024-06-27T21:11:26.277-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T21:11:26.290-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T21:11:26.293-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-27T21:44:46.713-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T21:44:46.754-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T21:44:46.775-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-27T21:44:46.775-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T21:44:46.826-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-27T21:44:46.832-0400] {standard_task_runner.py:63} INFO - Started process 220704 to run task
+[2024-06-27T21:44:46.836-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '350', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp6ra2srsc']
+[2024-06-27T21:44:46.840-0400] {standard_task_runner.py:91} INFO - Job 350: Subtask transform_with_spark
+[2024-06-27T21:44:46.962-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T21:44:47.132-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-27T21:44:47.133-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T21:45:16.576-0400] {logging_mixin.py:188} INFO - ("HOLA HOLA HOLA HOLA HOLA ESTOY AQUI: {'actors': ['Amy Poehler,', 'Maya "
+ "Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis "
+ "Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', "
+ "'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', "
+ "'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin "
+ "Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United "
+ "States', 'description': 'Vuelve a la mente de Riley, quien acaba de "
+ 'convertirse en adolescente, en el momento en que la Central se enfrenta a '
+ 'una reforma para hacer sitio a algo completamente inesperado: ¡nuevas '
+ 'Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al '
+ 'mando de una operación exitosa, no saben muy bien qué sentir cuando aparece '
+ 'Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y '
+ "Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', "
+ "'Familia', 'Aventura', 'Comedia'], 'image_url': "
+ "'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', "
+ "'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', "
+ "'views': 933, 'year': '2024'}")
+[2024-06-27T21:45:16.579-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 933, 'year': '2024'}
+[2024-06-27T21:45:16.579-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T21:45:16.600-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T014446, end_date=20240628T014516
+[2024-06-27T21:45:16.671-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T21:45:16.697-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T21:45:16.703-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T09:52:30.797-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T09:52:30.825-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T09:52:30.832-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T09:52:30.832-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T09:52:30.853-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-28T09:52:30.864-0400] {standard_task_runner.py:63} INFO - Started process 230131 to run task
+[2024-06-28T09:52:30.877-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '394', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmprzslq4lw']
+[2024-06-28T09:52:30.879-0400] {standard_task_runner.py:91} INFO - Job 394: Subtask transform_with_spark
+[2024-06-28T09:52:30.980-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T09:52:31.111-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-28T09:52:31.113-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T09:52:47.881-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 979, 'year': '2024'}
+[2024-06-28T09:52:47.884-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T09:52:48.047-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T135230, end_date=20240628T135248
+[2024-06-28T09:52:48.393-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T09:52:48.428-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T09:52:48.602-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T11:01:48.542-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T11:01:48.568-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T11:01:48.575-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T11:01:48.576-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T11:01:48.593-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-28T11:01:48.606-0400] {standard_task_runner.py:63} INFO - Started process 236839 to run task
+[2024-06-28T11:01:48.609-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '454', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpb6soagmu']
+[2024-06-28T11:01:48.611-0400] {standard_task_runner.py:91} INFO - Job 454: Subtask transform_with_spark
+[2024-06-28T11:01:48.736-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T11:01:48.843-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-28T11:01:48.844-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T11:02:09.672-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 979, 'year': '2024'}
+[2024-06-28T11:02:09.676-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T11:02:09.697-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T150148, end_date=20240628T150209
+[2024-06-28T11:02:09.742-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T11:02:09.780-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T11:02:09.840-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T11:16:53.556-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T11:16:53.595-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T11:16:53.602-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T11:16:53.603-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T11:16:53.626-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-28T11:16:53.636-0400] {standard_task_runner.py:63} INFO - Started process 241287 to run task
+[2024-06-28T11:16:53.641-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '524', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpzdofrmol']
+[2024-06-28T11:16:53.645-0400] {standard_task_runner.py:91} INFO - Job 524: Subtask transform_with_spark
+[2024-06-28T11:16:53.808-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T11:16:53.943-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-28T11:16:53.945-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T11:17:24.742-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 979, 'year': '2024'}
+[2024-06-28T11:17:24.743-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T11:17:24.794-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T151653, end_date=20240628T151724
+[2024-06-28T11:17:24.863-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T11:17:24.965-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T11:17:24.988-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T15:59:56.434-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T15:59:56.460-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T15:59:56.469-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T15:59:56.469-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T15:59:56.513-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-28T15:59:56.523-0400] {standard_task_runner.py:63} INFO - Started process 245428 to run task
+[2024-06-28T15:59:56.529-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '574', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp9shvwj29']
+[2024-06-28T15:59:56.532-0400] {standard_task_runner.py:91} INFO - Job 574: Subtask transform_with_spark
+[2024-06-28T15:59:56.651-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T15:59:56.811-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-28T15:59:56.811-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T16:00:11.084-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 979, 'year': '2024'}
+[2024-06-28T16:00:11.085-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T16:00:11.125-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T195956, end_date=20240628T200011
+[2024-06-28T16:00:11.204-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T16:00:11.243-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T16:00:11.255-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-06-28T16:19:12.463-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T16:19:12.496-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T16:19:12.502-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [queued]>
+[2024-06-28T16:19:12.503-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-28T16:19:12.559-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-06-27 00:01:30+00:00
+[2024-06-28T16:19:12.573-0400] {standard_task_runner.py:63} INFO - Started process 248113 to run task
+[2024-06-28T16:19:12.578-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-06-27T00:01:30+00:00', '--job-id', '599', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpj8d84u4j']
+[2024-06-28T16:19:12.580-0400] {standard_task_runner.py:91} INFO - Job 599: Subtask transform_with_spark
+[2024-06-28T16:19:12.670-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-06-27T00:01:30+00:00 [running]> on host walter-VirtualBox
+[2024-06-28T16:19:12.795-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:01:30+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:01:30+00:00'
+[2024-06-28T16:19:12.796-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T16:19:34.335-0400] {python.py:237} INFO - Done. Returned value was: {'actors': ['Amy Poehler,', 'Maya Hawke,', 'Kensington Tallman,', 'Liza Lapira,', 'Phyllis Smith,', 'Lewis Black,', 'Tony Hale,', 'Ayo Edebiri,', 'Adèle Exarchopoulos,', 'Lilimar,', 'Grace Lu,', 'Sumayyah Nuriddin-Green,', 'Diane Lane,', 'Kyle MacLachlan,', 'Paul Walter Hauser,', 'Yvette Nicole Brown,', 'Ron Funches,', 'James Austin Johnson,', 'Yong Yea,', 'Steve Purcell,', 'Dave Goelz,'], 'country': 'United States', 'description': 'Vuelve a la mente de Riley, quien acaba de convertirse en adolescente, en el momento en que la Central se enfrenta a una reforma para hacer sitio a algo completamente inesperado: ¡nuevas Emociones! Alegría, Tristeza, Ira, Miedo y Asco, que llevan muchos años al mando de una operación exitosa, no saben muy bien qué sentir cuando aparece Ansiedad, que además no ha llegado sola. Se ha traído a Vergüenza, Envidia y Ennui.', 'director': 'Kelsey Mann', 'duration': 97, 'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg', 'quality': 'HD', 'rating': 7.7, 'title': 'Del revés 2 (Inside Out 2)', 'views': 979, 'year': '2024'}
+[2024-06-28T16:19:34.338-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T16:19:34.362-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-06-27T00:01:30+00:00, execution_date=20240627T000130, start_date=20240628T201912, end_date=20240628T201934
+[2024-06-28T16:19:34.425-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T16:19:34.459-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T16:19:34.493-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

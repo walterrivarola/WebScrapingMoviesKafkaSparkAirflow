@@ -1,0 +1,5 @@
+[2024-06-21T16:09:48.518-0400] {processor.py:161} INFO - Started process (PID=25082) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-06-21T16:09:48.520-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py for tasks to queue
+[2024-06-21T16:09:48.523-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:48.522-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-06-21T16:09:48.525-0400] {processor.py:842} WARNING - No viable dags retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py
+[2024-06-21T16:09:48.535-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/plugins/event_listener.py took 0.022 seconds

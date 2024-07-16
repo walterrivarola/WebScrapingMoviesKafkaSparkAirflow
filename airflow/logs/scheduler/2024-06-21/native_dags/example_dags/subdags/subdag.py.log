@@ -1,0 +1,5 @@
+[2024-06-21T16:09:44.629-0400] {processor.py:161} INFO - Started process (PID=25069) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-06-21T16:09:44.630-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2024-06-21T16:09:44.637-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:44.634-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-06-21T16:09:44.658-0400] {processor.py:842} WARNING - No viable dags retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-06-21T16:09:44.815-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/subdags/subdag.py took 0.194 seconds

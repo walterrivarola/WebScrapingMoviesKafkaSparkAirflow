@@ -1,0 +1,16 @@
+[2024-06-21T16:09:49.677-0400] {processor.py:161} INFO - Started process (PID=25083) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-21T16:09:49.677-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-06-21T16:09:49.679-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.678-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-21T16:09:49.689-0400] {processor.py:840} INFO - DAG(s) 'example_xcom_args_with_operators', 'example_xcom_args' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-06-21T16:09:49.827-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.827-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_xcom_args_with_operators
+[2024-06-21T16:09:49.850-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.849-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_xcom_args_with_operators
+[2024-06-21T16:09:49.860-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.859-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_xcom_args_with_operators
+[2024-06-21T16:09:49.879-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.879-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_xcom_args
+[2024-06-21T16:09:49.892-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.892-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_xcom_args
+[2024-06-21T16:09:49.903-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.902-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_xcom_args
+[2024-06-21T16:09:49.904-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.904-0400] {dag.py:3096} INFO - Sync 2 DAGs
+[2024-06-21T16:09:49.915-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.914-0400] {dag.py:3118} INFO - Creating ORM DAG for example_xcom_args
+[2024-06-21T16:09:49.915-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.915-0400] {dag.py:3118} INFO - Creating ORM DAG for example_xcom_args_with_operators
+[2024-06-21T16:09:49.916-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.915-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-06-21T16:09:49.916-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:49.916-0400] {dag.py:3954} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-06-21T16:09:49.935-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcomargs.py took 0.266 seconds

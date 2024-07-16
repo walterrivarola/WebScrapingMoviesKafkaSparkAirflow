@@ -1,0 +1,36 @@
+[2024-07-01T20:18:20.804-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T20:18:20.817-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [queued]>
+[2024-07-01T20:18:20.823-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [queued]>
+[2024-07-01T20:18:20.823-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T20:18:20.857-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_url_fastapi> on 2024-07-01 15:00:00+00:00
+[2024-07-01T20:18:20.864-0400] {standard_task_runner.py:63} INFO - Started process 415621 to run task
+[2024-07-01T20:18:20.869-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_url_fastapi', 'scheduled__2024-07-01T15:00:00+00:00', '--job-id', '729', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpe8spjy4d']
+[2024-07-01T20:18:20.870-0400] {standard_task_runner.py:91} INFO - Job 729: Subtask execute_post_url_fastapi
+[2024-07-01T20:18:20.920-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T20:18:21.001-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_url_fastapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T15:00:00+00:00'
+[2024-07-01T20:18:21.002-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T20:18:22.600-0400] {logging_mixin.py:188} INFO - Scraping URL did not find any new URLs
+[2024-07-01T20:18:22.604-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T20:18:22.609-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T20:18:22.615-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_url_fastapi, run_id=scheduled__2024-07-01T15:00:00+00:00, execution_date=20240701T150000, start_date=20240702T001820, end_date=20240702T001822
+[2024-07-01T20:18:22.665-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T20:18:22.692-0400] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T20:18:22.719-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:20:50.769-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:20:50.780-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [queued]>
+[2024-07-01T23:20:50.784-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [queued]>
+[2024-07-01T23:20:50.784-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:20:50.797-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_url_fastapi> on 2024-07-01 15:00:00+00:00
+[2024-07-01T23:20:50.801-0400] {standard_task_runner.py:63} INFO - Started process 451487 to run task
+[2024-07-01T23:20:50.807-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_url_fastapi', 'scheduled__2024-07-01T15:00:00+00:00', '--job-id', '871', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpw5qdedto']
+[2024-07-01T23:20:50.808-0400] {standard_task_runner.py:91} INFO - Job 871: Subtask execute_post_url_fastapi
+[2024-07-01T23:20:50.842-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_url_fastapi scheduled__2024-07-01T15:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:20:50.932-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_url_fastapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T15:00:00+00:00'
+[2024-07-01T23:20:50.932-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:20:52.816-0400] {logging_mixin.py:188} INFO - Scraping URL did not find any new URLs
+[2024-07-01T23:20:52.817-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:20:52.817-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:20:52.821-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_url_fastapi, run_id=scheduled__2024-07-01T15:00:00+00:00, execution_date=20240701T150000, start_date=20240702T032050, end_date=20240702T032052
+[2024-07-01T23:20:52.886-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:20:52.905-0400] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:20:52.913-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,11 @@
+[2024-06-21T16:09:42.194-0400] {processor.py:161} INFO - Started process (PID=25065) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-06-21T16:09:42.196-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2024-06-21T16:09:42.201-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.201-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-06-21T16:09:42.232-0400] {processor.py:840} INFO - DAG(s) 'tutorial_dag' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2024-06-21T16:09:42.847-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.846-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2024-06-21T16:09:42.865-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.864-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2024-06-21T16:09:42.874-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.873-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2024-06-21T16:09:42.874-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.874-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:09:42.884-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.884-0400] {dag.py:3118} INFO - Creating ORM DAG for tutorial_dag
+[2024-06-21T16:09:42.884-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:09:42.884-0400] {dag.py:3954} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2024-06-21T16:09:42.929-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.744 seconds

@@ -1,0 +1,170 @@
+[2024-07-01T11:55:23.827-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T11:55:23.876-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T11:55:23.902-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T11:55:23.902-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T11:55:23.934-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T11:55:23.963-0400] {standard_task_runner.py:63} INFO - Started process 385558 to run task
+[2024-07-01T11:55:23.964-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '694', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp4pxn5j7t']
+[2024-07-01T11:55:23.966-0400] {standard_task_runner.py:91} INFO - Job 694: Subtask print_json
+[2024-07-01T11:55:24.070-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T11:55:24.223-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T11:55:24.224-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T11:55:24.270-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T11:55:24.270-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T11:55:24.271-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T11:55:24.276-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240701T155523, end_date=20240701T155524
+[2024-07-01T11:55:24.365-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T11:55:24.389-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T11:55:24.389-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T21:24:38.871-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T21:24:38.897-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T21:24:38.902-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T21:24:38.903-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T21:24:38.936-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T21:24:38.943-0400] {standard_task_runner.py:63} INFO - Started process 430766 to run task
+[2024-07-01T21:24:38.948-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '780', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpbn8zery2']
+[2024-07-01T21:24:38.950-0400] {standard_task_runner.py:91} INFO - Job 780: Subtask print_json
+[2024-07-01T21:24:39.028-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T21:24:39.119-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T21:24:39.119-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T21:24:39.155-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T21:24:39.157-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T21:24:39.157-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T21:24:39.161-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T012438, end_date=20240702T012439
+[2024-07-01T21:24:39.260-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T21:24:39.278-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T21:24:39.280-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T21:49:34.601-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T21:49:34.633-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T21:49:34.644-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T21:49:34.644-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T21:49:34.675-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T21:49:34.681-0400] {standard_task_runner.py:63} INFO - Started process 433421 to run task
+[2024-07-01T21:49:34.685-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '795', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpe5sfmnoq']
+[2024-07-01T21:49:34.686-0400] {standard_task_runner.py:91} INFO - Job 795: Subtask print_json
+[2024-07-01T21:49:34.756-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T21:49:34.902-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T21:49:34.903-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T21:49:34.939-0400] {logging_mixin.py:188} INFO - ('{"image_url": '
+ '"https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg", '
+ '"title": "Del rev\\u00e9s 2 (Inside Out 2)", "rating": 7.7, "duration": "1h '
+ '37m", "year": "2024", "quality": "HD", "description": "Ver del rev\\u00e9s 2 '
+ '(inside out 2) Cuevana3.Vuelve a la mente de Riley, quien acaba de '
+ 'convertirse en adolescente, en el momento en que la Central se enfrenta a '
+ 'una reforma para hacer sitio a algo completamente inesperado: \\u00a1nuevas '
+ 'Emociones! Alegr\\u00eda, Tristeza, Ira, Miedo y Asco, que llevan muchos '
+ 'a\\u00f1os al mando de una operaci\\u00f3n exitosa, no saben muy bien '
+ 'qu\\u00e9 sentir cuando aparece Ansiedad, que adem\\u00e1s no ha llegado '
+ 'sola. Se ha tra\\u00eddo a Verg\\u00fcenza, Envidia y Ennui.", "genre": '
+ '["Animaci\\u00f3n", "Familia", "Aventura", "Comedia"], "country": "United '
+ 'States", "director": "Kelsey Mann", "actors": ["Amy Poehler,", "Maya '
+ 'Hawke,", "Kensington Tallman,", "Liza Lapira,", "Phyllis Smith,", "Lewis '
+ 'Black,", "Tony Hale,", "Ayo Edebiri,", "Ad\\u00e8le Exarchopoulos,", '
+ '"Lilimar,", "Grace Lu,", "Sumayyah Nuriddin-Green,", "Diane Lane,", "Kyle '
+ 'MacLachlan,", "Paul Walter Hauser,", "Yvette Nicole Brown,", "Ron Funches,", '
+ '"James Austin Johnson,", "Yong Yea,", "Steve Purcell,", "Dave Goelz,"], '
+ '"views": 1151}')
+[2024-07-01T21:49:34.940-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T21:49:34.940-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T21:49:34.946-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T014934, end_date=20240702T014934
+[2024-07-01T21:49:35.032-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T21:49:35.055-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T21:49:35.056-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:02:00.421-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:02:00.447-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:02:00.453-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:02:00.453-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:02:00.476-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T23:02:00.481-0400] {standard_task_runner.py:63} INFO - Started process 444177 to run task
+[2024-07-01T23:02:00.484-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '810', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpwg493f0w']
+[2024-07-01T23:02:00.486-0400] {standard_task_runner.py:91} INFO - Job 810: Subtask print_json
+[2024-07-01T23:02:00.535-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:02:00.662-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T23:02:00.663-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:02:00.689-0400] {logging_mixin.py:188} INFO - ('{"image_url": '
+ '"https://i0.wp.com/www.themoviedb.org/t/p/w185/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg", '
+ '"title": "Bad Boys: Ride or Die", "rating": 6.9, "duration": "1h 55m", '
+ '"year": "2024", "quality": "HD", "description": "Ver bad boys: ride or die '
+ 'Cuevana3.Tras escuchar falsas acusaciones sobre su excapit\\u00e1n y mentor '
+ 'Mike y Marcus deciden investigar el asunto incluso volverse los m\\u00e1s '
+ 'buscados de ser necesarios", "genre": ["Acci\\u00f3n", "Crimen", "Suspense", '
+ '"Comedia"], "country": "United States", "director": "Adil El Arbi", '
+ '"actors": ["Will Smith,", "Martin Lawrence,", "Vanessa Hudgens,", "Alexander '
+ 'Ludwig,", "Paola Nu\\u00f1ez,", "Eric Dane,", "Ioan Gruffudd,", "Jacob '
+ 'Scipio,", "Melanie Liburd,", "Tasha Smith,", "Rhea Seehorn,", "Tiffany '
+ 'Haddish,", "Joe Pantoliano,", "DJ Khaled,", "John Salley,", "Bianca '
+ 'Bethune,", "Dennis McDonald,", "Quinn Hemphill,", "Michael Bay,", "Derek '
+ 'Russo,", "Karter Reese Newsome,"], "views": 460}')
+[2024-07-01T23:02:00.689-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:02:00.690-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:02:00.694-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T030200, end_date=20240702T030200
+[2024-07-01T23:02:00.758-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:02:00.788-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:02:00.789-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:36:04.945-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:36:04.978-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:36:04.992-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:36:04.992-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:36:05.043-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T23:36:05.074-0400] {standard_task_runner.py:63} INFO - Started process 459318 to run task
+[2024-07-01T23:36:05.079-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '903', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpzejr4ll4']
+[2024-07-01T23:36:05.081-0400] {standard_task_runner.py:91} INFO - Job 903: Subtask print_json
+[2024-07-01T23:36:05.165-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:36:05.475-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T23:36:05.487-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:36:05.503-0400] {logging_mixin.py:188} INFO - ('{"image_url": '
+ '"https://i0.wp.com/www.themoviedb.org/t/p/w185/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg", '
+ '"title": "Bad Boys: Ride or Die", "rating": 6.9, "duration": "1h 55m", '
+ '"year": "2024", "quality": "HD", "description": "Ver bad boys: ride or die '
+ 'Cuevana3.Tras escuchar falsas acusaciones sobre su excapit\\u00e1n y mentor '
+ 'Mike y Marcus deciden investigar el asunto incluso volverse los m\\u00e1s '
+ 'buscados de ser necesarios", "genre": ["Acci\\u00f3n", "Crimen", "Suspense", '
+ '"Comedia"], "country": "United States", "director": "Adil El Arbi", '
+ '"actors": ["Will Smith,", "Martin Lawrence,", "Vanessa Hudgens,", "Alexander '
+ 'Ludwig,", "Paola Nu\\u00f1ez,", "Eric Dane,", "Ioan Gruffudd,", "Jacob '
+ 'Scipio,", "Melanie Liburd,", "Tasha Smith,", "Rhea Seehorn,", "Tiffany '
+ 'Haddish,", "Joe Pantoliano,", "DJ Khaled,", "John Salley,", "Bianca '
+ 'Bethune,", "Dennis McDonald,", "Quinn Hemphill,", "Michael Bay,", "Derek '
+ 'Russo,", "Karter Reese Newsome,"], "views": 460}')
+[2024-07-01T23:36:05.504-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:36:05.504-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:36:05.509-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T033604, end_date=20240702T033605
+[2024-07-01T23:36:05.595-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:36:05.624-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:36:05.625-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:52:06.763-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:52:06.783-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:52:06.788-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-01T23:52:06.788-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:52:06.802-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-01T23:52:06.809-0400] {standard_task_runner.py:63} INFO - Started process 465325 to run task
+[2024-07-01T23:52:06.811-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '921', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpbgqcerzq']
+[2024-07-01T23:52:06.813-0400] {standard_task_runner.py:91} INFO - Job 921: Subtask print_json
+[2024-07-01T23:52:06.857-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:52:06.987-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-01T23:52:06.989-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:52:07.033-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T23:52:07.033-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:52:07.035-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:52:07.042-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T035206, end_date=20240702T035207
+[2024-07-01T23:52:07.141-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:52:07.157-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:52:07.163-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T09:22:54.651-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T09:22:54.687-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-02T09:22:54.698-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-02T09:22:54.699-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T09:22:54.751-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 00:00:00+00:00
+[2024-07-02T09:22:54.766-0400] {standard_task_runner.py:63} INFO - Started process 475935 to run task
+[2024-07-02T09:22:54.774-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '953', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmppxqepbh3']
+[2024-07-02T09:22:54.777-0400] {standard_task_runner.py:91} INFO - Job 953: Subtask print_json
+[2024-07-02T09:22:54.864-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T00:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T09:22:54.977-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-02T09:22:54.978-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T09:22:55.004-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-02T09:22:55.005-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T09:22:55.005-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T09:22:55.011-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240702T132254, end_date=20240702T132255
+[2024-07-02T09:22:55.104-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T09:22:55.138-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T09:22:55.139-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,257 @@
+[2024-07-01T11:06:28.774-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T11:06:28.794-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T11:06:28.805-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T11:06:28.805-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T11:06:28.844-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T11:06:28.850-0400] {standard_task_runner.py:63} INFO - Started process 381849 to run task
+[2024-07-01T11:06:28.853-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '657', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpa1u6xo40']
+[2024-07-01T11:06:28.854-0400] {standard_task_runner.py:91} INFO - Job 657: Subtask execute_post_details_fasapi
+[2024-07-01T11:06:28.934-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T11:06:29.051-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T11:06:29.055-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T11:06:29.109-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T11:06:29.113-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T11:06:29.113-0400] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 60, in execute_post_details_fasapi
+    consumer = Consumer(consumer_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+cimpl.KafkaException: KafkaError{code=_INVALID_ARG,val=-186,str="No such configuration property: "boostrap.servers""}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 82, in execute_post_details_fasapi
+    consumer.close()
+    ^^^^^^^^
+UnboundLocalError: cannot access local variable 'consumer' where it is not associated with a value
+[2024-07-01T11:06:29.118-0400] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240701T150628, end_date=20240701T150629
+[2024-07-01T11:06:29.148-0400] {standard_task_runner.py:110} ERROR - Failed to execute job 657 for task execute_post_details_fasapi (cannot access local variable 'consumer' where it is not associated with a value; 381849)
+[2024-07-01T11:06:29.166-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-01T11:06:29.189-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T11:06:29.243-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T11:17:31.472-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T11:17:31.486-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T11:17:31.490-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T11:17:31.491-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T11:17:31.520-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T11:17:31.531-0400] {standard_task_runner.py:63} INFO - Started process 383070 to run task
+[2024-07-01T11:17:31.540-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '675', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpkr7sh6wz']
+[2024-07-01T11:17:31.542-0400] {standard_task_runner.py:91} INFO - Job 675: Subtask execute_post_details_fasapi
+[2024-07-01T11:17:31.617-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T11:17:31.761-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T11:17:31.767-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T11:17:31.833-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T11:17:31.835-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T11:17:31.836-0400] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 61, in execute_post_details_fasapi
+    consumer = Consumer(consumer_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+cimpl.KafkaException: KafkaError{code=_INVALID_ARG,val=-186,str="No such configuration property: "boostrap.servers""}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 83, in execute_post_details_fasapi
+    consumer.close()
+    ^^^^^^^^
+UnboundLocalError: cannot access local variable 'consumer' where it is not associated with a value
+[2024-07-01T11:17:31.847-0400] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240701T151731, end_date=20240701T151731
+[2024-07-01T11:17:31.926-0400] {standard_task_runner.py:110} ERROR - Failed to execute job 675 for task execute_post_details_fasapi (cannot access local variable 'consumer' where it is not associated with a value; 383070)
+[2024-07-01T11:17:31.980-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-01T11:17:32.008-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T11:17:32.029-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T19:20:43.399-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T19:20:43.414-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T19:20:43.419-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T19:20:43.419-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T19:20:43.444-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T19:20:43.450-0400] {standard_task_runner.py:63} INFO - Started process 408853 to run task
+[2024-07-01T19:20:43.454-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '697', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpd5eh6cmu']
+[2024-07-01T19:20:43.455-0400] {standard_task_runner.py:91} INFO - Job 697: Subtask execute_post_details_fasapi
+[2024-07-01T19:20:43.488-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T19:20:43.615-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T19:20:43.616-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T19:20:43.683-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T19:21:43.764-0400] {logging_mixin.py:188} INFO - Tiempo de espera agotado
+[2024-07-01T19:21:43.796-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T19:21:43.798-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T19:21:43.804-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240701T232043, end_date=20240701T232143
+[2024-07-01T19:21:43.882-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T19:21:43.904-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T19:21:43.905-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T21:15:12.769-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T21:15:12.790-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T21:15:12.798-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T21:15:12.799-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T21:15:12.857-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T21:15:12.872-0400] {standard_task_runner.py:63} INFO - Started process 428300 to run task
+[2024-07-01T21:15:12.890-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '761', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpswqgb0xd']
+[2024-07-01T21:15:12.898-0400] {standard_task_runner.py:91} INFO - Job 761: Subtask execute_post_details_fasapi
+[2024-07-01T21:15:13.042-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T21:15:13.213-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T21:15:13.214-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T21:16:23.762-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T21:16:23.763-0400] {logging_mixin.py:188} INFO - 1719882983.7632082
+[2024-07-01T21:16:23.768-0400] {logging_mixin.py:188} INFO - Tiempo de espera agotado
+[2024-07-01T21:16:23.790-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T21:16:23.791-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T21:16:23.824-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240702T011512, end_date=20240702T011623
+[2024-07-01T21:16:23.921-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T21:16:23.967-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T21:16:23.969-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:03:55.473-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:03:55.487-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T23:03:55.492-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T23:03:55.492-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:03:55.507-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T23:03:55.512-0400] {standard_task_runner.py:63} INFO - Started process 444827 to run task
+[2024-07-01T23:03:55.517-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '817', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpt64rf1mq']
+[2024-07-01T23:03:55.521-0400] {standard_task_runner.py:91} INFO - Job 817: Subtask execute_post_details_fasapi
+[2024-07-01T23:03:55.601-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:03:55.727-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T23:03:55.733-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:04:49.051-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T23:04:49.124-0400] {logging_mixin.py:188} INFO - {"image_url": "https://i0.wp.com/www.themoviedb.org/t/p/w185/3HoBhPg6T5st6K09QfZh4lGB0hz.jpg", "title": "La academia del Sr. Kleks", "rating": 6.1, "duration": "2h 10m", "year": "2024", "quality": "HD", "description": "Ver la academia del sr. kleks Cuevana3.En busca de su padre, que ha desaparecido, una adolescente aparentemente normal acepta asistir a una universidad m\u00e1gica dirigida por un profesor exc\u00e9ntrico, el Sr. Kleks.", "genre": ["Fantas\u00eda", "Aventura", "Familia"], "country": "Bulgaria", "director": "Maciej Kawulski", "actors": ["Antonina Litwiniak,", "Tomasz Kot,", "Piotr Fronczewski,", "Sebastian Stankiewicz,", "Agnieszka Grochowska,", "Danuta Stenka,", "Daniel Walasek,", "Konrad Repi\u0144ski,", "Igor Fernandez-Kowalczyk,", "Apolonia Ga\u0142\u0119ska,", "Daria Kalinchuk,", "Amelia Luty\u0144ska,", "Enkhkhangaluun Byambadul,", "Jan Makowski,", "Jana Jachimek,", "Liu Sitkowska,", "Maria Al Tlfah,", "Dima Al Tlfah,", "Nikodem Adamski,", "Julian Mr\u00f3wczy\u0144ski,", "Adam Panikowski,"], "views": 50}
+[2024-07-01T23:04:49.132-0400] {python.py:237} INFO - Done. Returned value was: {"image_url": "https://i0.wp.com/www.themoviedb.org/t/p/w185/3HoBhPg6T5st6K09QfZh4lGB0hz.jpg", "title": "La academia del Sr. Kleks", "rating": 6.1, "duration": "2h 10m", "year": "2024", "quality": "HD", "description": "Ver la academia del sr. kleks Cuevana3.En busca de su padre, que ha desaparecido, una adolescente aparentemente normal acepta asistir a una universidad m\u00e1gica dirigida por un profesor exc\u00e9ntrico, el Sr. Kleks.", "genre": ["Fantas\u00eda", "Aventura", "Familia"], "country": "Bulgaria", "director": "Maciej Kawulski", "actors": ["Antonina Litwiniak,", "Tomasz Kot,", "Piotr Fronczewski,", "Sebastian Stankiewicz,", "Agnieszka Grochowska,", "Danuta Stenka,", "Daniel Walasek,", "Konrad Repi\u0144ski,", "Igor Fernandez-Kowalczyk,", "Apolonia Ga\u0142\u0119ska,", "Daria Kalinchuk,", "Amelia Luty\u0144ska,", "Enkhkhangaluun Byambadul,", "Jan Makowski,", "Jana Jachimek,", "Liu Sitkowska,", "Maria Al Tlfah,", "Dima Al Tlfah,", "Nikodem Adamski,", "Julian Mr\u00f3wczy\u0144ski,", "Adam Panikowski,"], "views": 50}
+[2024-07-01T23:04:49.132-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:04:49.170-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240702T030355, end_date=20240702T030449
+[2024-07-01T23:04:49.226-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:04:49.282-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:04:49.284-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:35:30.542-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:35:30.565-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T23:35:30.572-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [queued]>
+[2024-07-01T23:35:30.573-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:35:30.605-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 03:00:00+00:00
+[2024-07-01T23:35:30.617-0400] {standard_task_runner.py:63} INFO - Started process 459101 to run task
+[2024-07-01T23:35:30.619-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T03:00:00+00:00', '--job-id', '902', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpzc3nbgzq']
+[2024-07-01T23:35:30.621-0400] {standard_task_runner.py:91} INFO - Job 902: Subtask execute_post_details_fasapi
+[2024-07-01T23:35:30.685-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T03:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:35:30.770-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T03:00:00+00:00'
+[2024-07-01T23:35:30.772-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:36:01.135-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:36:01.147-0400] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 464, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/usr/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 60, in execute_post_details_fasapi
+    response = requests.post(api_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-07-01T23:36:01.222-0400] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T03:00:00+00:00, execution_date=20240701T030000, start_date=20240702T033530, end_date=20240702T033601
+[2024-07-01T23:36:01.281-0400] {standard_task_runner.py:110} ERROR - Failed to execute job 902 for task execute_post_details_fasapi (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); 459101)
+[2024-07-01T23:36:01.309-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-01T23:36:01.347-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:36:01.368-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

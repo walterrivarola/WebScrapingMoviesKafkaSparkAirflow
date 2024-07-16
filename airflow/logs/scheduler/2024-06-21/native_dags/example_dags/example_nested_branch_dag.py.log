@@ -1,0 +1,11 @@
+[2024-06-21T16:10:13.107-0400] {processor.py:161} INFO - Started process (PID=25154) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-06-21T16:10:13.108-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2024-06-21T16:10:13.110-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.109-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-06-21T16:10:13.127-0400] {processor.py:840} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-06-21T16:10:13.244-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.243-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_nested_branch_dag
+[2024-06-21T16:10:13.255-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.255-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_nested_branch_dag
+[2024-06-21T16:10:13.263-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.263-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_nested_branch_dag
+[2024-06-21T16:10:13.264-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.264-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:10:13.272-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.271-0400] {dag.py:3118} INFO - Creating ORM DAG for example_nested_branch_dag
+[2024-06-21T16:10:13.279-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:13.278-0400] {dag.py:3954} INFO - Setting next_dagrun for example_nested_branch_dag to 2024-06-20 00:00:00+00:00, run_after=2024-06-21 00:00:00+00:00
+[2024-06-21T16:10:13.297-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.198 seconds

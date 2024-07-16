@@ -1,0 +1,11 @@
+[2024-06-21T16:10:02.793-0400] {processor.py:161} INFO - Started process (PID=25113) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-06-21T16:10:02.794-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2024-06-21T16:10:02.795-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.795-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-06-21T16:10:02.809-0400] {processor.py:840} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-06-21T16:10:02.920-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.919-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2024-06-21T16:10:02.931-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.930-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2024-06-21T16:10:02.941-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.940-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2024-06-21T16:10:02.941-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.941-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:10:02.952-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.952-0400] {dag.py:3118} INFO - Creating ORM DAG for example_task_group_decorator
+[2024-06-21T16:10:02.961-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:02.961-0400] {dag.py:3954} INFO - Setting next_dagrun for example_task_group_decorator to 2024-06-20 00:00:00+00:00, run_after=2024-06-21 00:00:00+00:00
+[2024-06-21T16:10:02.983-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.196 seconds

@@ -1,0 +1,1567 @@
+[2024-06-27T16:04:50.442-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T16:04:50.476-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.get_json_from_task1 scheduled__2024-06-27T00:13:00+00:00 [queued]>
+[2024-06-27T16:04:50.483-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.get_json_from_task1 scheduled__2024-06-27T00:13:00+00:00 [queued]>
+[2024-06-27T16:04:50.484-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-27T16:04:50.528-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_json_from_task1> on 2024-06-27 00:13:00+00:00
+[2024-06-27T16:04:50.548-0400] {standard_task_runner.py:63} INFO - Started process 189573 to run task
+[2024-06-27T16:04:50.568-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'get_json_from_task1', 'scheduled__2024-06-27T00:13:00+00:00', '--job-id', '210', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp3dxqtch_']
+[2024-06-27T16:04:50.574-0400] {standard_task_runner.py:91} INFO - Job 210: Subtask get_json_from_task1
+[2024-06-27T16:04:50.680-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.get_json_from_task1 scheduled__2024-06-27T00:13:00+00:00 [running]> on host walter-VirtualBox
+[2024-06-27T16:04:50.825-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='get_json_from_task1' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T00:13:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T00:13:00+00:00'
+[2024-06-27T16:04:50.828-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T16:04:50.867-0400] {logging_mixin.py:188} INFO - {'movie_details': [{'actors': ['Amy Poehler,',
+                               'Maya Hawke,',
+                               'Kensington Tallman,',
+                               'Liza Lapira,',
+                               'Phyllis Smith,',
+                               'Lewis Black,',
+                               'Tony Hale,',
+                               'Ayo Edebiri,',
+                               'Adèle Exarchopoulos,',
+                               'Lilimar,',
+                               'Grace Lu,',
+                               'Sumayyah Nuriddin-Green,',
+                               'Diane Lane,',
+                               'Kyle MacLachlan,',
+                               'Paul Walter Hauser,',
+                               'Yvette Nicole Brown,',
+                               'Ron Funches,',
+                               'James Austin Johnson,',
+                               'Yong Yea,',
+                               'Steve Purcell,',
+                               'Dave Goelz,'],
+                    'country': 'United States',
+                    'description': 'Ver del revés 2 (inside out 2) '
+                                   'Cuevana3.Vuelve a la mente de Riley, quien '
+                                   'acaba de convertirse en adolescente, en el '
+                                   'momento en que la Central se enfrenta a '
+                                   'una reforma para hacer sitio a algo '
+                                   'completamente inesperado: ¡nuevas '
+                                   'Emociones! Alegría, Tristeza, Ira, Miedo y '
+                                   'Asco, que llevan muchos años al mando de '
+                                   'una operación exitosa, no saben muy bien '
+                                   'qué sentir cuando aparece Ansiedad, que '
+                                   'además no ha llegado sola. Se ha traído a '
+                                   'Vergüenza, Envidia y Ennui.',
+                    'director': 'Kelsey Mann',
+                    'duration': '1h 37m',
+                    'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg',
+                    'quality': 'HD',
+                    'rating': 7.7,
+                    'title': 'Del revés 2 (Inside Out 2)',
+                    'views': 933,
+                    'year': '2024'},
+                   {'actors': ['Owen Teague,',
+                               'Freya Allan,',
+                               'Kevin Durand,',
+                               'Peter Macon,',
+                               'William H. Macy,',
+                               'Eka Darville,',
+                               'Travis Jeffery,',
+                               'Lydia Peckham,',
+                               'Neil Sandilands,',
+                               "Ras-Samuel Welda'abzgi,",
+                               'Sara Wiseman,',
+                               'Kaden Hartcher,',
+                               'Andy McPhee,',
+                               'Nina Gallas,',
+                               'Samuel Falé,',
+                               'Dichen Lachman,',
+                               'Virginie Laverdure,',
+                               'Markus Hamilton,',
+                               'Benjamin Scott,',
+                               'Nirish Bhat Surambadka,',
+                               'Frances Berry,'],
+                    'country': 'United States',
+                    'description': 'Ver el reino del planeta de los simios '
+                                   'Cuevana3.Ambientada varias generaciones en '
+                                   'el futuro tras el reinado de César, en la '
+                                   'que los simios son la especie dominante '
+                                   'que vive en armonía y los humanos se han '
+                                   'visto reducidos a vivir en la sombra. '
+                                   'Mientras un nuevo y tiránico líder simio '
+                                   'construye su imperio, un joven simio '
+                                   'emprende un angustioso viaje que le '
+                                   'llevará a cuestionarse todo lo que sabe '
+                                   'sobre el pasado y a tomar decisiones que '
+                                   'definirán el futuro de simios y humanos '
+                                   'por igual.',
+                    'director': 'Wes Ball',
+                    'duration': '2h 25m',
+                    'genre': ['Ciencia ficción', 'Aventura', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/kkFn3KM47Qq4Wjhd8GuFfe3LX27.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'El reino del planeta de los simios',
+                    'views': 1235,
+                    'year': '2024'},
+                   {'actors': ['Anya Taylor-Joy,',
+                               'Chris Hemsworth,',
+                               'Tom Burke,',
+                               'Alyla Browne,',
+                               'George Shevtsov,',
+                               'Lachy Hulme,',
+                               'John Howard,',
+                               'Charlee Fraser,',
+                               'Angus Sampson,',
+                               'Nathan Jones,',
+                               'Elsa Pataky,',
+                               'Josh Helman,',
+                               'David Field,',
+                               'Rahel Romahn,',
+                               'David Collins,',
+                               'Goran D. Kleut,',
+                               'CJ. Bloomfield,',
+                               'Matuse Paz,',
+                               'Ian Roberts,',
+                               'Guy Spence,',
+                               'Robert Jones,'],
+                    'country': 'Australia',
+                    'description': 'Ver furiosa: de la saga mad max '
+                                   'Cuevana3.En un mundo postapocalíptico '
+                                   'donde todo ha perdido su valor, los pocos '
+                                   'supervivientes se guían por la ley del más '
+                                   'fuerte. Sin aprecio por la vida, lo único '
+                                   'que despierta un brutal interés es la '
+                                   'gasolina, sinónimo de poder y objetivo de '
+                                   'bandas armadas hasta los dientes y sin '
+                                   'escrúpulos. En este contexto conoceremos '
+                                   'la historia de la arrebatadoramente '
+                                   'despiadada, salvaje y joven Furiosa, quien '
+                                   'cae en manos de una horda de motoristas y '
+                                   'debe sobrevivir a muchas pruebas mientras '
+                                   'reúne los medios para encontrar el camino '
+                                   "de vuelta a casa. Precuela de 'Mad Max: "
+                                   "Furia en la carretera' (2015).",
+                    'director': 'George Miller',
+                    'duration': '2h 28m',
+                    'genre': ['Acción', 'Aventura', 'Ciencia ficción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/tGHUlykWn9V2IIQ4ZaATIAq9VLB.jpg',
+                    'quality': 'HD',
+                    'rating': 7.6,
+                    'title': 'Furiosa: De la saga Mad Max',
+                    'views': 1199,
+                    'year': '2024'},
+                   {'actors': ['Will Smith,',
+                               'Martin Lawrence,',
+                               'Vanessa Hudgens,',
+                               'Alexander Ludwig,',
+                               'Paola Nuñez,',
+                               'Eric Dane,',
+                               'Ioan Gruffudd,',
+                               'Jacob Scipio,',
+                               'Melanie Liburd,',
+                               'Tasha Smith,',
+                               'Rhea Seehorn,',
+                               'Tiffany Haddish,',
+                               'Joe Pantoliano,',
+                               'DJ Khaled,',
+                               'John Salley,',
+                               'Bianca Bethune,',
+                               'Dennis McDonald,',
+                               'Quinn Hemphill,',
+                               'Michael Bay,',
+                               'Derek Russo,',
+                               'Karter Reese Newsome,'],
+                    'country': 'United States',
+                    'description': 'Ver bad boys: ride or die Cuevana3.Tras '
+                                   'escuchar falsas acusaciones sobre su '
+                                   'excapitán y mentor Mike y Marcus deciden '
+                                   'investigar el asunto incluso volverse los '
+                                   'más buscados de ser necesarios',
+                    'director': 'Adil El Arbi',
+                    'duration': '1h 55m',
+                    'genre': ['Acción', 'Crimen', 'Suspense', 'Comedia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Bad Boys: Ride or Die',
+                    'views': 436,
+                    'year': '2024'},
+                   {'actors': ['Bérénice Bejo,',
+                               'Nassim Lyes,',
+                               'Léa Léviant,',
+                               'Nagisa Morimoto,',
+                               'Anaïs Parello,',
+                               'Iñaki Lartigue,',
+                               'Anne Marivin,',
+                               'Timi-Joy Marbot,',
+                               'Ricky Tribord,',
+                               'Aurélia Petit,',
+                               'Sandra Parfait,',
+                               'Yannick Choirat,',
+                               'Patrick Ligardes,',
+                               'Victor Pontecorvo,',
+                               'Jean-Marc Bellu,',
+                               'Stéphane Jacquot,',
+                               'Ibrahima Ba,',
+                               'Daouda Keita,',
+                               'Marvin Dubart,',
+                               'Monsieur Poulpe,',
+                               'Aksel Üstün,'],
+                    'country': 'France',
+                    'description': 'Ver en las profundidades del sena '
+                                   'Cuevana3.La científica Sophie se ve '
+                                   'obligada a enfrentarse a su trágico pasado '
+                                   'para salvar París de un baño de sangre '
+                                   'cuando un tiburón gigante aparece en el '
+                                   'Sena.',
+                    'director': 'Xavier Gens',
+                    'duration': '1h 44m',
+                    'genre': ['Suspense', 'Terror', 'Acción', 'Misterio'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ww9s0QSZ06WIxyZAKAdg6nqfE5v.jpg',
+                    'quality': 'HD',
+                    'rating': 6.0,
+                    'title': 'En las profundidades del Sena',
+                    'views': 737,
+                    'year': '2024'},
+                   {'actors': ['Cailey Fleming,',
+                               'Ryan Reynolds,',
+                               'John Krasinski,',
+                               'Fiona Shaw,',
+                               'Steve Carell,',
+                               'Phoebe Waller-Bridge,',
+                               'Louis Gossett Jr.,',
+                               'Alan Kim,',
+                               'Liza Colón-Zayas,',
+                               'Bobby Moynihan,',
+                               'Catharine Daddario,',
+                               'Audrey Hoffman,',
+                               'Laquet Sharnell Pringle,',
+                               'Ed Herbstman,',
+                               'Barbara Andres,',
+                               'Alexander Rivero,',
+                               'Shauna Pinkett,',
+                               "Sa'Raya Paris Johnson,",
+                               'Marta Siteiya Moipei,',
+                               'David Weissmann,',
+                               'Awkwafina,'],
+                    'country': 'United States',
+                    'description': 'Ver amigos imaginarios Cuevana3.Una niña '
+                                   'pasa por una experiencia difícil y '
+                                   'entonces empieza a ver a los amigos '
+                                   'imaginarios de todo el mundo que se han '
+                                   'ido quedando atrás a medida que sus amigos '
+                                   'de la vida real han ido creciendo.',
+                    'director': 'John Krasinski',
+                    'duration': '1h 44m',
+                    'genre': ['Comedia', 'Fantasía', 'Familia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/8RgGuC7w8JxhykauzTC4bwha1J8.jpg',
+                    'quality': 'HD',
+                    'rating': 7.4,
+                    'title': 'Amigos imaginarios',
+                    'views': 433,
+                    'year': '2024'},
+                   {'actors': ['Kirsten Dunst,',
+                               'Wagner Moura,',
+                               'Cailee Spaeny,',
+                               'Stephen McKinley Henderson,',
+                               'Nelson Lee,',
+                               'Nick Offerman,',
+                               'Jefferson White,',
+                               'Evan Lai,',
+                               'Vince Pisani,',
+                               'Justin James Boykin,',
+                               'Jess Matney,',
+                               'Greg Hill,',
+                               'Edmund Donovan,',
+                               'Sonoya Mizuno,',
+                               'Tim James,',
+                               'Simeon Freeman,',
+                               'James Yaegashi,',
+                               'Dean Grimes,',
+                               'Alexa Mansour,',
+                               'Martha B. Knighton,',
+                               'Melissa Saint-Amand,'],
+                    'country': 'Finland',
+                    'description': 'Ver guerra civil Cuevana3.En un futuro '
+                                   'cercano donde América está sumida en una '
+                                   'cruenta guerra civil, un equipo de '
+                                   'periodistas y fotógrafos de guerra '
+                                   'emprenderá un viaje por carretera en '
+                                   'dirección a Washington DC. Su misión: '
+                                   'llegar antes de que las fuerzas rebeldes '
+                                   'asalten la Casa Blanca y arrebaten el '
+                                   'control al presidente de los Estados '
+                                   'Unidos.',
+                    'director': 'Alex Garland',
+                    'duration': '1h 49m',
+                    'genre': ['Bélica', 'Acción', 'Drama'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/iCOQUVVaPqRuR3JqF71akguf6Mj.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Guerra Civil',
+                    'views': 1724,
+                    'year': '2024'},
+                   {'actors': ['Christopher Sean,',
+                               'Gedde Watanabe,',
+                               'Tamlyn Tomita,',
+                               'Keone Young,',
+                               'Julia Harriman,',
+                               'Rob Fukuzaki,',
+                               'Frank Buckley,',
+                               'François Chau,',
+                               'Robert Yasumura,',
+                               'Artt Butler,',
+                               'Karen Yasumura,',
+                               'Mayumi Yoshida,',
+                               "Mila O'Malley,",
+                               'Bret Marnell,',
+                               'Julia Kato,',
+                               'Brittany Ishibashi,',
+                               'Veronica Lapke,',
+                               'Lee Shorten,',
+                               'Jonathan Groff,',
+                               'Masa Kanome,',
+                               'Vic Chao,'],
+                    'country': 'Japan',
+                    'description': 'Ver ultraman: el ascenso Cuevana3.La '
+                                   'historia sigue al exitoso jugador de '
+                                   'béisbol llamado Ken Sato, quien regresa a '
+                                   'Japón para asumir la identidad de '
+                                   'Ultraman. Sin embargo, sus planes se '
+                                   'trastocan cuando se enucnetra a un kaiju '
+                                   'recién nacido a quien decide criar como su '
+                                   'propio hijo. Sumado a este imprevisto, '
+                                   'Sato deberá retomar la relación con su '
+                                   'distanciado padre y lidiar con la Fuerza '
+                                   'de Defensa Kaiju.',
+                    'director': 'Shannon Tindle',
+                    'duration': '1h 56m',
+                    'genre': ['Animación',
+                              'Ciencia ficción',
+                              'Familia',
+                              'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2D7SsqU8VZOl838KR7q9pzljaLe.jpg',
+                    'quality': 'HD',
+                    'rating': 8.4,
+                    'title': 'Ultraman: El Ascenso',
+                    'views': 124,
+                    'year': '2024'},
+                   {'actors': ['Jennifer Lopez,',
+                               'Simu Liu,',
+                               'Sterling K. Brown,',
+                               'Gregory James Cohan,',
+                               'Abraham Popoola,',
+                               'Lana Parrilla,',
+                               'Mark Strong,',
+                               'Briella Guiza,',
+                               'Adia Smith-Eriksson,',
+                               'Logan Hunt,',
+                               'Jared Shimabukuro,',
+                               'Ashley J. Hicks,',
+                               'Paul Ganus,',
+                               'Zoe Boyle,',
+                               'Howland Wilson,',
+                               'Justin Walker White,',
+                               'Michelangelo Hyeon,',
+                               'Gloria Cole,',
+                               'Vaughn Johseph,',
+                               'Supreet Bedi,',
+                               'Lorraine Tai,'],
+                    'country': 'United States',
+                    'description': 'Ver atlas Cuevana3.Una brillante analista '
+                                   'antiterrorista recela de la IA hasta que '
+                                   'descubre que podría ser su única esperanza '
+                                   'cuando se tuerce una misión para atrapar a '
+                                   'un robot rebelde.',
+                    'director': 'Brad Peyton',
+                    'duration': '2h 00m',
+                    'genre': ['Ciencia ficción', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/wSnBSv7oHgm1kZmiM8IqithlTmJ.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'Atlas',
+                    'views': 893,
+                    'year': '2024'},
+                   {'actors': ['Steve Carell,',
+                               'Kristen Wiig,',
+                               'Will Ferrell,',
+                               'Sofía Vergara,',
+                               'Joey King,',
+                               'Stephen Colbert,',
+                               'Chloe Fineman,',
+                               'Miranda Cosgrove,',
+                               'Dana Gaier,',
+                               'Madison Polan,',
+                               'Pierre Coffin,',
+                               'Steve Coogan,',
+                               'Chris Renaud,',
+                               'Jason Segel,',
+                               'Benjamin Bratt,',
+                               'Trey Parker,',
+                               'Sandra Bullock,',
+                               'Jon Hamm,',
+                               'Taraji P. Henson,',
+                               'Russell Brand,'],
+                    'country': 'United States',
+                    'description': 'Ver gru 4. mi villano favorito '
+                                   'Cuevana3.Gru, Lucy y las niñas -Margo, '
+                                   'Edith y Agnes- dan la bienvenida a un '
+                                   'nuevo miembro en la familia: Gru Junior, '
+                                   'que parece llegar con el propósito de ser '
+                                   'un suplicio para su padre. Gru tendrá que '
+                                   'enfrentarse en esta ocasión a su nueva '
+                                   'némesis Maxime Le Mal y su sofisticada y '
+                                   'malévola novia Valentina, lo que obligará '
+                                   'a la familia a tener que darse a la fuga. '
+                                   "Cuarta entrega de 'Gru, mi villano "
+                                   "favorito'.",
+                    'director': 'Chris Renaud',
+                    'duration': '1h 35m',
+                    'genre': ['Animación', 'Familia', 'Comedia', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/6BcxgP05jDip4Zjh2P5Be2aNi0Z.jpg',
+                    'quality': 'HD',
+                    'rating': 8.5,
+                    'title': 'Gru 4. Mi villano favorito',
+                    'views': 53,
+                    'year': '2024'},
+                   {'actors': ['Ayumu Murase,',
+                               'Kaito Ishikawa,',
+                               'Yuki Kaji,',
+                               '中村悠一,',
+                               '内山昂輝,',
+                               '日野聡,',
+                               '林勇,',
+                               'Nobuhiko Okamoto,',
+                               '入野自由,',
+                               'Yoshimasa Hosoya,',
+                               'Soma Saito,',
+                               '増田俊樹,',
+                               'Koutaro Nishiyama,',
+                               '立花慎之介,',
+                               '石井マーク,',
+                               'Takanori Hoshino,',
+                               '横田成吾,',
+                               'Ryuichi Sawada,',
+                               '池田恭祐,',
+                               '渡辺拓海,',
+                               '汐谷文康,'],
+                    'country': 'Japan',
+                    'description': 'Ver haikyu!! la batalla del basurero '
+                                   'Cuevana3.El encuentro entre los equipos '
+                                   'rivales de Karasuno y Nekoma hará que la '
+                                   'tensión aumente, ya que ambos equipos '
+                                   'están decididos a salir victoriosos en el '
+                                   'campeonato nacional de voleibol. Primera '
+                                   'película del proyecto en dos partes para '
+                                   'el final de "Haikyu!".',
+                    'director': 'Susumu Mitsunaka',
+                    'duration': '1h 25m',
+                    'genre': ['Animación', 'Drama'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/gFmY2GY2X71ErIlLbO1j9MqGn4J.jpg',
+                    'quality': 'HD',
+                    'rating': 7.4,
+                    'title': 'Haikyu!! La batalla del basurero',
+                    'views': 58,
+                    'year': '2024'},
+                   {'actors': ['Dakota Fanning,',
+                               'Georgina Campbell,',
+                               'Olwen Fouéré,',
+                               'Oliver Finnegan,',
+                               'Siobhan Hewlett,',
+                               'Alistair Brammer,',
+                               'Hannah Howland,',
+                               'Charles Camrose,',
+                               'Kya Brame,',
+                               'Anthony Morris,',
+                               "Shane O'Regan,",
+                               'Cara Steele,',
+                               'Shannon Antonia,',
+                               'Kofi De Graft Jordan,',
+                               'Diarmuid de Faoite,',
+                               'Ann Marie Horan,',
+                               'Seán T. Ó Meallaigh,',
+                               'Jacob Greenway,',
+                               'Jim Tighe,',
+                               'Andrea Bechis,',
+                               'Hannah Dargan,'],
+                    'country': 'United States',
+                    'description': 'Ver los vigilantes Cuevana3.Sigue a Mina, '
+                                   'una artista de 28 años que queda varada en '
+                                   'un bosque en el oeste de Irlanda. Cuando '
+                                   'Mina encuentra refugio, sin saberlo, queda '
+                                   'atrapada junto a tres extraños que son '
+                                   'observados y acechados por misteriosas '
+                                   'criaturas cada noche.',
+                    'director': 'Ishana Night Shyamalan',
+                    'duration': '1h 42m',
+                    'genre': ['Terror', 'Misterio', 'Fantasía'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/13G0wKhucGWiERNloOicAuzQIyd.jpg',
+                    'quality': 'HD',
+                    'rating': 6.1,
+                    'title': 'Los vigilantes',
+                    'views': 179,
+                    'year': '2024'},
+                   {'actors': ['Harriet Slater,',
+                               'Adain Bradley,',
+                               'Avantika,',
+                               'Jacob Batalon,',
+                               'Humberly González,',
+                               'Wolfgang Novogratz,',
+                               'Larsen Thompson,',
+                               'Olwen Fouéré,',
+                               'Sunčica Milanović,',
+                               'Alan Wells,',
+                               'Joss Carter,',
+                               'James Swanton,',
+                               'Staša Nikolić,',
+                               'Anna Halberg,',
+                               'Cavin Cornwall,',
+                               'Lucy Ridley,',
+                               'Felix Leech,',
+                               'Vahidin Prelić,',
+                               'Dunja Pavlović,',
+                               'Višnja Obradović,'],
+                    'country': 'United States',
+                    'description': 'Ver tarot Cuevana3.Un grupo de amigos de '
+                                   'la universidad comienzan a morir de '
+                                   'maneras relacionadas con su fortuna '
+                                   'después de que les lean los horóscopos.',
+                    'director': 'Spenser Cohen',
+                    'duration': '1h 32m',
+                    'genre': ['Terror'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/Adh7xmtgSIUGZBaMj9VLTmq2G8z.jpg',
+                    'quality': 'HD',
+                    'rating': 6.6,
+                    'title': 'Tarot',
+                    'views': 589,
+                    'year': '2024'},
+                   {'actors': ["Lupita Nyong'o,",
+                               'Joseph Quinn,',
+                               'Schnitze,',
+                               'Alex Wolff,',
+                               'Djimon Hounsou,',
+                               'Cain Aiden,',
+                               'Jennifer Woodward,',
+                               'Elijah Ungvary,',
+                               'Nico,'],
+                    'country': 'United States',
+                    'description': 'Ver un lugar tranquilo: día uno '
+                                   'Cuevana3.Una mujer llamada Sam trata de '
+                                   'sobrevivir a una invasión en la ciudad de '
+                                   'Nueva York por criaturas alienígenas '
+                                   'sedientas de sangre con oídos '
+                                   'ultrasónicos. Tercera entrega de la saga.',
+                    'director': 'Michael Sarnoski',
+                    'duration': '1h 39m',
+                    'genre': ['Terror', 'Ciencia ficción', 'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/jGOi939xU8BDRfAAhN6eiTSf3H8.jpg',
+                    'quality': 'HD',
+                    'rating': 7.1,
+                    'title': 'Un lugar tranquilo: Día uno',
+                    'views': 19,
+                    'year': '2024'},
+                   {'actors': ['Chris Pratt,',
+                               'Samuel L. Jackson,',
+                               'Hannah Waddingham,',
+                               'Ving Rhames,',
+                               'Nicholas Hoult,',
+                               'Cecily Strong,',
+                               'Harvey Guillén,',
+                               'Brett Goldstein,',
+                               'Bowen Yang,',
+                               'Snoop Dogg,',
+                               'Janelle James,',
+                               'Angus Cloud,',
+                               'Jeff Foxworthy,',
+                               'Eugenia Caruso,',
+                               'Luke Cinque-White,',
+                               'Dev Joshi,',
+                               'Chana Keefer,',
+                               'Mark Keefer,',
+                               'Edward VL Montgomery,',
+                               'Mark Dindal,',
+                               'Cameron Bernard Jones,'],
+                    'country': 'Hong Kong',
+                    'description': 'Ver garfield: la película Cuevana3.El '
+                                   'mundialmente famoso Garfield, el gato '
+                                   'casero que odia los lunes y que adora la '
+                                   'lasaña, está a punto de vivir una aventura '
+                                   '¡en el salvaje mundo exterior! Tras una '
+                                   'inesperada reunión con su largamente '
+                                   'perdido padre – el desaliñado gato '
+                                   'callejero Vic – Garfield y su amigo canino '
+                                   'Odie se ven forzados a abandonar sus '
+                                   'perfectas y consentidas vidas al unirse a '
+                                   'Vic en un hilarante y muy arriesgado '
+                                   'atraco.',
+                    'director': 'Mark Dindal',
+                    'duration': '1h 41m',
+                    'genre': ['Animación', 'Comedia', 'Familia', 'Aventura'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/6QR2FOCQr41gSduN70WulRIhJb7.jpg',
+                    'quality': 'HD',
+                    'rating': 6.7,
+                    'title': 'Garfield: la película',
+                    'views': 191,
+                    'year': '2024'},
+                   {'actors': ['Molly Kunz,',
+                               'Michael X. Sommers,',
+                               'Colleen Camp,',
+                               'Stefanie Estes,',
+                               'Claire Saunders,',
+                               'William Ford-Conway,',
+                               'Evyn Flanders,'],
+                    'country': 'United States',
+                    'description': 'Ver wild eyed and wicked Cuevana3.Lily '
+                                   'Pierce is sick of being haunted. She '
+                                   'decides to reconnect with her estranged '
+                                   'father, a disgraced history professor, and '
+                                   'learn how to draw upon a time of steel and '
+                                   'blade when armor-clad knights rode out and '
+                                   'dueled their monsters to the death.',
+                    'director': 'Gordon Shoemaker Foxwood',
+                    'duration': '1h 39m',
+                    'genre': ['Terror',
+                              'Fantasía',
+                              'Drama',
+                              'Misterio',
+                              'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/nJMNvYZ21bMdB2Pq0qCk88jnQc6.jpg',
+                    'quality': 'HD',
+                    'rating': 4.6,
+                    'title': 'Wild Eyed and Wicked',
+                    'views': 11,
+                    'year': '2024'},
+                   {'actors': ['Jessica Córes,',
+                               'Bruno Gagliasso,',
+                               'Gabz,',
+                               'Christian Malheiros,',
+                               'Nill Marcondes,',
+                               'Guta Ruiz,',
+                               'Miguel Nader,',
+                               'Márcio Fecher,',
+                               'Nicole Cordery,',
+                               'Emilly Nayara,',
+                               'Miguel Falabella,',
+                               'Klebber Toledo,',
+                               'Paulo Vilhena,',
+                               'Danton Mello,',
+                               'Erika Januza,',
+                               'Kagga Jayson,',
+                               'Luana Tanaka,'],
+                    'country': 'Brazil',
+                    'description': 'Ver biónicos Cuevana3.Dos hermanas '
+                                   'compiten en salto de longitud en un futuro '
+                                   'distópico en el que las prótesis robóticas '
+                                   'han redefinido el deporte. Su rivalidad '
+                                   'las lleva por un siniestro camino.',
+                    'director': 'Afonso Poyart',
+                    'duration': '1h 50m',
+                    'genre': ['Ciencia ficción', 'Acción', 'Aventura'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ns9Tr9fda1YuPK2k6BqwqmEOkgl.jpg',
+                    'quality': 'HD',
+                    'rating': 5.5,
+                    'title': 'Biónicos',
+                    'views': 89,
+                    'year': '2024'},
+                   {'actors': ['Glen Powell,',
+                               'Adria Arjona,',
+                               'Austin Amelio,',
+                               'Retta,',
+                               'Sanjay Rao,',
+                               'Molly Bernard,',
+                               'Evan Holtzman,',
+                               'Gralen Bryant Banks,',
+                               'Mike Markoff,',
+                               'Bryant Carroll,',
+                               'Enrique Bush,',
+                               'Bri Myles,',
+                               'Kate Adair,',
+                               'Martin Bats Bradford,',
+                               'Morgana Shaw,',
+                               'Ritchie Montgomery,',
+                               'Richard Robichaux,',
+                               'Jo-Ann Robinson,',
+                               'Jonas Lerway,',
+                               'Kim Baptiste,',
+                               'Sara Osi Scott,'],
+                    'country': 'United States',
+                    'description': 'Ver hit man. asesino por casualidad '
+                                   'Cuevana3.Gary Johnson es el asesino '
+                                   'profesional más buscado de Nueva Orleans. '
+                                   'Para sus clientes, es el sicario ideal. '
+                                   'Pero si le pagas para que elimine a un '
+                                   'cónyuge infiel o a un jefe maltratador, '
+                                   'será mejor que tengas cuidado: trabaja '
+                                   'para la policía. Cuando rompe el protocolo '
+                                   'para ayudar a una mujer desesperada que '
+                                   'intenta huir de un marido maltratador, se '
+                                   'convierte en uno de sus falsos personajes, '
+                                   'se enamora de la mujer y coquetea con '
+                                   'convertirse él mismo en un criminal.',
+                    'director': 'Richard Linklater',
+                    'duration': '1h 56m',
+                    'genre': ['Romance', 'Comedia', 'Crimen'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/lUA3eDLlgeWORvuuUz3s7vLHa1s.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Hit Man. Asesino por casualidad',
+                    'views': 409,
+                    'year': '2024'},
+                   {'actors': ['Jessica Alba,',
+                               'Anthony Michael Hall,',
+                               'Tone Bell,',
+                               'Mark Webber,',
+                               'Jake Weary,',
+                               'Gabriel Basso,',
+                               'Kaiwi Lyman,',
+                               'Hari Dhillon,',
+                               'Alejandro De Hoyos,',
+                               'Nadiv Molcho,',
+                               'Peter Monro,',
+                               'Stephanie Jones,',
+                               'James Cady,',
+                               'Jerry G. Angelo,',
+                               'David DeLao,',
+                               'Kyle Potter,',
+                               'Andrew Franklin,',
+                               'Luis Valladares,',
+                               'Monica Sanchez,',
+                               'Gianna Gallegos,',
+                               'Gabriel Armijo,'],
+                    'country': 'United States',
+                    'description': 'Ver detonantes Cuevana3.Una soldado de las '
+                                   'fuerzas especiales descubre una peligrosa '
+                                   'conspiración cuando regresa a casa en '
+                                   'busca de respuestas sobre la muerte de su '
+                                   'padre.',
+                    'director': 'Mouly Surya',
+                    'duration': '1h 47m',
+                    'genre': ['Acción', 'Crimen', 'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ejlwgCS2SJDFvlTlO8tZYPtCci4.jpg',
+                    'quality': 'HD',
+                    'rating': 5.6,
+                    'title': 'Detonantes',
+                    'views': 159,
+                    'year': '2024'},
+                   {'actors': ['Bill Skarsgård,',
+                               'Jessica Rothe,',
+                               'H. Jon Benjamin,',
+                               'Michelle Dockery,',
+                               'Brett Gelman,',
+                               'Sharlto Copley,',
+                               'Andrew Koji,',
+                               'Isaiah Mustafa,',
+                               'Famke Janssen,',
+                               'Quinn Copeland,',
+                               'Cameron Crovetti,',
+                               'Nicholas Crovetti,',
+                               'Yayan Ruhian,',
+                               'Dorothy Ann Gould,',
+                               'Jane de Wet,',
+                               'Inge Beckmann,',
+                               'Martin Munro,',
+                               'Pierre Nelson,',
+                               'Natalia Aleksandrowa,',
+                               'Shane John Kruger,',
+                               'François Chau,'],
+                    'country': 'United States',
+                    'description': 'Ver boy kills world Cuevana3.Boy (Bill '
+                                   'Skarsgård) es un joven que deberá '
+                                   'enfrentarse a la desquiciada matriarca de '
+                                   'una corrupta dinastía postapocalíptica que '
+                                   'lo dejó huérfano, sordo y sin voz. Tras '
+                                   'vivir una trágica infancia, un enigmático '
+                                   'chamán (Yayan Ruhian) le convertirá en un '
+                                   'instrumento de venganza y lo soltará en su '
+                                   'lejana distopía en vísperas de la matanza '
+                                   'anual de disidentes. Intentando encontrar '
+                                   'su lugar, Boy se unirá a un grupo de '
+                                   'resistencia a la vez que mantendrá '
+                                   'intensas discusiones con el fantasma de su '
+                                   'rebelde hermana pequeña.',
+                    'director': 'Moritz Mohr',
+                    'duration': '1h 50m',
+                    'genre': ['Acción',
+                              'Suspense',
+                              'Crimen',
+                              'Ciencia ficción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/hgYhI7bzV3IVh4aUzfFi1C1j2sW.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'Boy Kills World',
+                    'views': 319,
+                    'year': '2024'},
+                   {'actors': ['Amy Poehler,',
+                               'Maya Hawke,',
+                               'Kensington Tallman,',
+                               'Liza Lapira,',
+                               'Phyllis Smith,',
+                               'Lewis Black,',
+                               'Tony Hale,',
+                               'Ayo Edebiri,',
+                               'Adèle Exarchopoulos,',
+                               'Lilimar,',
+                               'Grace Lu,',
+                               'Sumayyah Nuriddin-Green,',
+                               'Diane Lane,',
+                               'Kyle MacLachlan,',
+                               'Paul Walter Hauser,',
+                               'Yvette Nicole Brown,',
+                               'Ron Funches,',
+                               'James Austin Johnson,',
+                               'Yong Yea,',
+                               'Steve Purcell,',
+                               'Dave Goelz,'],
+                    'country': 'United States',
+                    'description': 'Ver del revés 2 (inside out 2) '
+                                   'Cuevana3.Vuelve a la mente de Riley, quien '
+                                   'acaba de convertirse en adolescente, en el '
+                                   'momento en que la Central se enfrenta a '
+                                   'una reforma para hacer sitio a algo '
+                                   'completamente inesperado: ¡nuevas '
+                                   'Emociones! Alegría, Tristeza, Ira, Miedo y '
+                                   'Asco, que llevan muchos años al mando de '
+                                   'una operación exitosa, no saben muy bien '
+                                   'qué sentir cuando aparece Ansiedad, que '
+                                   'además no ha llegado sola. Se ha traído a '
+                                   'Vergüenza, Envidia y Ennui.',
+                    'director': 'Kelsey Mann',
+                    'duration': '1h 37m',
+                    'genre': ['Animación', 'Familia', 'Aventura', 'Comedia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2PuAY3xSvbchQWqpSiXw08Yt0NP.jpg',
+                    'quality': 'HD',
+                    'rating': 7.7,
+                    'title': 'Del revés 2 (Inside Out 2)',
+                    'views': 933,
+                    'year': '2024'},
+                   {'actors': ['Owen Teague,',
+                               'Freya Allan,',
+                               'Kevin Durand,',
+                               'Peter Macon,',
+                               'William H. Macy,',
+                               'Eka Darville,',
+                               'Travis Jeffery,',
+                               'Lydia Peckham,',
+                               'Neil Sandilands,',
+                               "Ras-Samuel Welda'abzgi,",
+                               'Sara Wiseman,',
+                               'Kaden Hartcher,',
+                               'Andy McPhee,',
+                               'Nina Gallas,',
+                               'Samuel Falé,',
+                               'Dichen Lachman,',
+                               'Virginie Laverdure,',
+                               'Markus Hamilton,',
+                               'Benjamin Scott,',
+                               'Nirish Bhat Surambadka,',
+                               'Frances Berry,'],
+                    'country': 'United States',
+                    'description': 'Ver el reino del planeta de los simios '
+                                   'Cuevana3.Ambientada varias generaciones en '
+                                   'el futuro tras el reinado de César, en la '
+                                   'que los simios son la especie dominante '
+                                   'que vive en armonía y los humanos se han '
+                                   'visto reducidos a vivir en la sombra. '
+                                   'Mientras un nuevo y tiránico líder simio '
+                                   'construye su imperio, un joven simio '
+                                   'emprende un angustioso viaje que le '
+                                   'llevará a cuestionarse todo lo que sabe '
+                                   'sobre el pasado y a tomar decisiones que '
+                                   'definirán el futuro de simios y humanos '
+                                   'por igual.',
+                    'director': 'Wes Ball',
+                    'duration': '2h 25m',
+                    'genre': ['Ciencia ficción', 'Aventura', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/kkFn3KM47Qq4Wjhd8GuFfe3LX27.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'El reino del planeta de los simios',
+                    'views': 1235,
+                    'year': '2024'},
+                   {'actors': ['Anya Taylor-Joy,',
+                               'Chris Hemsworth,',
+                               'Tom Burke,',
+                               'Alyla Browne,',
+                               'George Shevtsov,',
+                               'Lachy Hulme,',
+                               'John Howard,',
+                               'Charlee Fraser,',
+                               'Angus Sampson,',
+                               'Nathan Jones,',
+                               'Elsa Pataky,',
+                               'Josh Helman,',
+                               'David Field,',
+                               'Rahel Romahn,',
+                               'David Collins,',
+                               'Goran D. Kleut,',
+                               'CJ. Bloomfield,',
+                               'Matuse Paz,',
+                               'Ian Roberts,',
+                               'Guy Spence,',
+                               'Robert Jones,'],
+                    'country': 'Australia',
+                    'description': 'Ver furiosa: de la saga mad max '
+                                   'Cuevana3.En un mundo postapocalíptico '
+                                   'donde todo ha perdido su valor, los pocos '
+                                   'supervivientes se guían por la ley del más '
+                                   'fuerte. Sin aprecio por la vida, lo único '
+                                   'que despierta un brutal interés es la '
+                                   'gasolina, sinónimo de poder y objetivo de '
+                                   'bandas armadas hasta los dientes y sin '
+                                   'escrúpulos. En este contexto conoceremos '
+                                   'la historia de la arrebatadoramente '
+                                   'despiadada, salvaje y joven Furiosa, quien '
+                                   'cae en manos de una horda de motoristas y '
+                                   'debe sobrevivir a muchas pruebas mientras '
+                                   'reúne los medios para encontrar el camino '
+                                   "de vuelta a casa. Precuela de 'Mad Max: "
+                                   "Furia en la carretera' (2015).",
+                    'director': 'George Miller',
+                    'duration': '2h 28m',
+                    'genre': ['Acción', 'Aventura', 'Ciencia ficción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/tGHUlykWn9V2IIQ4ZaATIAq9VLB.jpg',
+                    'quality': 'HD',
+                    'rating': 7.6,
+                    'title': 'Furiosa: De la saga Mad Max',
+                    'views': 1199,
+                    'year': '2024'},
+                   {'actors': ['Will Smith,',
+                               'Martin Lawrence,',
+                               'Vanessa Hudgens,',
+                               'Alexander Ludwig,',
+                               'Paola Nuñez,',
+                               'Eric Dane,',
+                               'Ioan Gruffudd,',
+                               'Jacob Scipio,',
+                               'Melanie Liburd,',
+                               'Tasha Smith,',
+                               'Rhea Seehorn,',
+                               'Tiffany Haddish,',
+                               'Joe Pantoliano,',
+                               'DJ Khaled,',
+                               'John Salley,',
+                               'Bianca Bethune,',
+                               'Dennis McDonald,',
+                               'Quinn Hemphill,',
+                               'Michael Bay,',
+                               'Derek Russo,',
+                               'Karter Reese Newsome,'],
+                    'country': 'United States',
+                    'description': 'Ver bad boys: ride or die Cuevana3.Tras '
+                                   'escuchar falsas acusaciones sobre su '
+                                   'excapitán y mentor Mike y Marcus deciden '
+                                   'investigar el asunto incluso volverse los '
+                                   'más buscados de ser necesarios',
+                    'director': 'Adil El Arbi',
+                    'duration': '1h 55m',
+                    'genre': ['Acción', 'Crimen', 'Suspense', 'Comedia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Bad Boys: Ride or Die',
+                    'views': 436,
+                    'year': '2024'},
+                   {'actors': ['Bérénice Bejo,',
+                               'Nassim Lyes,',
+                               'Léa Léviant,',
+                               'Nagisa Morimoto,',
+                               'Anaïs Parello,',
+                               'Iñaki Lartigue,',
+                               'Anne Marivin,',
+                               'Timi-Joy Marbot,',
+                               'Ricky Tribord,',
+                               'Aurélia Petit,',
+                               'Sandra Parfait,',
+                               'Yannick Choirat,',
+                               'Patrick Ligardes,',
+                               'Victor Pontecorvo,',
+                               'Jean-Marc Bellu,',
+                               'Stéphane Jacquot,',
+                               'Ibrahima Ba,',
+                               'Daouda Keita,',
+                               'Marvin Dubart,',
+                               'Monsieur Poulpe,',
+                               'Aksel Üstün,'],
+                    'country': 'France',
+                    'description': 'Ver en las profundidades del sena '
+                                   'Cuevana3.La científica Sophie se ve '
+                                   'obligada a enfrentarse a su trágico pasado '
+                                   'para salvar París de un baño de sangre '
+                                   'cuando un tiburón gigante aparece en el '
+                                   'Sena.',
+                    'director': 'Xavier Gens',
+                    'duration': '1h 44m',
+                    'genre': ['Suspense', 'Terror', 'Acción', 'Misterio'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ww9s0QSZ06WIxyZAKAdg6nqfE5v.jpg',
+                    'quality': 'HD',
+                    'rating': 6.0,
+                    'title': 'En las profundidades del Sena',
+                    'views': 737,
+                    'year': '2024'},
+                   {'actors': ['Cailey Fleming,',
+                               'Ryan Reynolds,',
+                               'John Krasinski,',
+                               'Fiona Shaw,',
+                               'Steve Carell,',
+                               'Phoebe Waller-Bridge,',
+                               'Louis Gossett Jr.,',
+                               'Alan Kim,',
+                               'Liza Colón-Zayas,',
+                               'Bobby Moynihan,',
+                               'Catharine Daddario,',
+                               'Audrey Hoffman,',
+                               'Laquet Sharnell Pringle,',
+                               'Ed Herbstman,',
+                               'Barbara Andres,',
+                               'Alexander Rivero,',
+                               'Shauna Pinkett,',
+                               "Sa'Raya Paris Johnson,",
+                               'Marta Siteiya Moipei,',
+                               'David Weissmann,',
+                               'Awkwafina,'],
+                    'country': 'United States',
+                    'description': 'Ver amigos imaginarios Cuevana3.Una niña '
+                                   'pasa por una experiencia difícil y '
+                                   'entonces empieza a ver a los amigos '
+                                   'imaginarios de todo el mundo que se han '
+                                   'ido quedando atrás a medida que sus amigos '
+                                   'de la vida real han ido creciendo.',
+                    'director': 'John Krasinski',
+                    'duration': '1h 44m',
+                    'genre': ['Comedia', 'Fantasía', 'Familia'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/8RgGuC7w8JxhykauzTC4bwha1J8.jpg',
+                    'quality': 'HD',
+                    'rating': 7.4,
+                    'title': 'Amigos imaginarios',
+                    'views': 433,
+                    'year': '2024'},
+                   {'actors': ['Kirsten Dunst,',
+                               'Wagner Moura,',
+                               'Cailee Spaeny,',
+                               'Stephen McKinley Henderson,',
+                               'Nelson Lee,',
+                               'Nick Offerman,',
+                               'Jefferson White,',
+                               'Evan Lai,',
+                               'Vince Pisani,',
+                               'Justin James Boykin,',
+                               'Jess Matney,',
+                               'Greg Hill,',
+                               'Edmund Donovan,',
+                               'Sonoya Mizuno,',
+                               'Tim James,',
+                               'Simeon Freeman,',
+                               'James Yaegashi,',
+                               'Dean Grimes,',
+                               'Alexa Mansour,',
+                               'Martha B. Knighton,',
+                               'Melissa Saint-Amand,'],
+                    'country': 'Finland',
+                    'description': 'Ver guerra civil Cuevana3.En un futuro '
+                                   'cercano donde América está sumida en una '
+                                   'cruenta guerra civil, un equipo de '
+                                   'periodistas y fotógrafos de guerra '
+                                   'emprenderá un viaje por carretera en '
+                                   'dirección a Washington DC. Su misión: '
+                                   'llegar antes de que las fuerzas rebeldes '
+                                   'asalten la Casa Blanca y arrebaten el '
+                                   'control al presidente de los Estados '
+                                   'Unidos.',
+                    'director': 'Alex Garland',
+                    'duration': '1h 49m',
+                    'genre': ['Bélica', 'Acción', 'Drama'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/iCOQUVVaPqRuR3JqF71akguf6Mj.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Guerra Civil',
+                    'views': 1724,
+                    'year': '2024'},
+                   {'actors': ['Christopher Sean,',
+                               'Gedde Watanabe,',
+                               'Tamlyn Tomita,',
+                               'Keone Young,',
+                               'Julia Harriman,',
+                               'Rob Fukuzaki,',
+                               'Frank Buckley,',
+                               'François Chau,',
+                               'Robert Yasumura,',
+                               'Artt Butler,',
+                               'Karen Yasumura,',
+                               'Mayumi Yoshida,',
+                               "Mila O'Malley,",
+                               'Bret Marnell,',
+                               'Julia Kato,',
+                               'Brittany Ishibashi,',
+                               'Veronica Lapke,',
+                               'Lee Shorten,',
+                               'Jonathan Groff,',
+                               'Masa Kanome,',
+                               'Vic Chao,'],
+                    'country': 'Japan',
+                    'description': 'Ver ultraman: el ascenso Cuevana3.La '
+                                   'historia sigue al exitoso jugador de '
+                                   'béisbol llamado Ken Sato, quien regresa a '
+                                   'Japón para asumir la identidad de '
+                                   'Ultraman. Sin embargo, sus planes se '
+                                   'trastocan cuando se enucnetra a un kaiju '
+                                   'recién nacido a quien decide criar como su '
+                                   'propio hijo. Sumado a este imprevisto, '
+                                   'Sato deberá retomar la relación con su '
+                                   'distanciado padre y lidiar con la Fuerza '
+                                   'de Defensa Kaiju.',
+                    'director': 'Shannon Tindle',
+                    'duration': '1h 56m',
+                    'genre': ['Animación',
+                              'Ciencia ficción',
+                              'Familia',
+                              'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/2D7SsqU8VZOl838KR7q9pzljaLe.jpg',
+                    'quality': 'HD',
+                    'rating': 8.4,
+                    'title': 'Ultraman: El Ascenso',
+                    'views': 124,
+                    'year': '2024'},
+                   {'actors': ['Jennifer Lopez,',
+                               'Simu Liu,',
+                               'Sterling K. Brown,',
+                               'Gregory James Cohan,',
+                               'Abraham Popoola,',
+                               'Lana Parrilla,',
+                               'Mark Strong,',
+                               'Briella Guiza,',
+                               'Adia Smith-Eriksson,',
+                               'Logan Hunt,',
+                               'Jared Shimabukuro,',
+                               'Ashley J. Hicks,',
+                               'Paul Ganus,',
+                               'Zoe Boyle,',
+                               'Howland Wilson,',
+                               'Justin Walker White,',
+                               'Michelangelo Hyeon,',
+                               'Gloria Cole,',
+                               'Vaughn Johseph,',
+                               'Supreet Bedi,',
+                               'Lorraine Tai,'],
+                    'country': 'United States',
+                    'description': 'Ver atlas Cuevana3.Una brillante analista '
+                                   'antiterrorista recela de la IA hasta que '
+                                   'descubre que podría ser su única esperanza '
+                                   'cuando se tuerce una misión para atrapar a '
+                                   'un robot rebelde.',
+                    'director': 'Brad Peyton',
+                    'duration': '2h 00m',
+                    'genre': ['Ciencia ficción', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/wSnBSv7oHgm1kZmiM8IqithlTmJ.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'Atlas',
+                    'views': 893,
+                    'year': '2024'},
+                   {'actors': ['Steve Carell,',
+                               'Kristen Wiig,',
+                               'Will Ferrell,',
+                               'Sofía Vergara,',
+                               'Joey King,',
+                               'Stephen Colbert,',
+                               'Chloe Fineman,',
+                               'Miranda Cosgrove,',
+                               'Dana Gaier,',
+                               'Madison Polan,',
+                               'Pierre Coffin,',
+                               'Steve Coogan,',
+                               'Chris Renaud,',
+                               'Jason Segel,',
+                               'Benjamin Bratt,',
+                               'Trey Parker,',
+                               'Sandra Bullock,',
+                               'Jon Hamm,',
+                               'Taraji P. Henson,',
+                               'Russell Brand,'],
+                    'country': 'United States',
+                    'description': 'Ver gru 4. mi villano favorito '
+                                   'Cuevana3.Gru, Lucy y las niñas -Margo, '
+                                   'Edith y Agnes- dan la bienvenida a un '
+                                   'nuevo miembro en la familia: Gru Junior, '
+                                   'que parece llegar con el propósito de ser '
+                                   'un suplicio para su padre. Gru tendrá que '
+                                   'enfrentarse en esta ocasión a su nueva '
+                                   'némesis Maxime Le Mal y su sofisticada y '
+                                   'malévola novia Valentina, lo que obligará '
+                                   'a la familia a tener que darse a la fuga. '
+                                   "Cuarta entrega de 'Gru, mi villano "
+                                   "favorito'.",
+                    'director': 'Chris Renaud',
+                    'duration': '1h 35m',
+                    'genre': ['Animación', 'Familia', 'Comedia', 'Acción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/6BcxgP05jDip4Zjh2P5Be2aNi0Z.jpg',
+                    'quality': 'HD',
+                    'rating': 8.5,
+                    'title': 'Gru 4. Mi villano favorito',
+                    'views': 53,
+                    'year': '2024'},
+                   {'actors': ['Ayumu Murase,',
+                               'Kaito Ishikawa,',
+                               'Yuki Kaji,',
+                               '中村悠一,',
+                               '内山昂輝,',
+                               '日野聡,',
+                               '林勇,',
+                               'Nobuhiko Okamoto,',
+                               '入野自由,',
+                               'Yoshimasa Hosoya,',
+                               'Soma Saito,',
+                               '増田俊樹,',
+                               'Koutaro Nishiyama,',
+                               '立花慎之介,',
+                               '石井マーク,',
+                               'Takanori Hoshino,',
+                               '横田成吾,',
+                               'Ryuichi Sawada,',
+                               '池田恭祐,',
+                               '渡辺拓海,',
+                               '汐谷文康,'],
+                    'country': 'Japan',
+                    'description': 'Ver haikyu!! la batalla del basurero '
+                                   'Cuevana3.El encuentro entre los equipos '
+                                   'rivales de Karasuno y Nekoma hará que la '
+                                   'tensión aumente, ya que ambos equipos '
+                                   'están decididos a salir victoriosos en el '
+                                   'campeonato nacional de voleibol. Primera '
+                                   'película del proyecto en dos partes para '
+                                   'el final de "Haikyu!".',
+                    'director': 'Susumu Mitsunaka',
+                    'duration': '1h 25m',
+                    'genre': ['Animación', 'Drama'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/gFmY2GY2X71ErIlLbO1j9MqGn4J.jpg',
+                    'quality': 'HD',
+                    'rating': 7.4,
+                    'title': 'Haikyu!! La batalla del basurero',
+                    'views': 58,
+                    'year': '2024'},
+                   {'actors': ['Dakota Fanning,',
+                               'Georgina Campbell,',
+                               'Olwen Fouéré,',
+                               'Oliver Finnegan,',
+                               'Siobhan Hewlett,',
+                               'Alistair Brammer,',
+                               'Hannah Howland,',
+                               'Charles Camrose,',
+                               'Kya Brame,',
+                               'Anthony Morris,',
+                               "Shane O'Regan,",
+                               'Cara Steele,',
+                               'Shannon Antonia,',
+                               'Kofi De Graft Jordan,',
+                               'Diarmuid de Faoite,',
+                               'Ann Marie Horan,',
+                               'Seán T. Ó Meallaigh,',
+                               'Jacob Greenway,',
+                               'Jim Tighe,',
+                               'Andrea Bechis,',
+                               'Hannah Dargan,'],
+                    'country': 'United States',
+                    'description': 'Ver los vigilantes Cuevana3.Sigue a Mina, '
+                                   'una artista de 28 años que queda varada en '
+                                   'un bosque en el oeste de Irlanda. Cuando '
+                                   'Mina encuentra refugio, sin saberlo, queda '
+                                   'atrapada junto a tres extraños que son '
+                                   'observados y acechados por misteriosas '
+                                   'criaturas cada noche.',
+                    'director': 'Ishana Night Shyamalan',
+                    'duration': '1h 42m',
+                    'genre': ['Terror', 'Misterio', 'Fantasía'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/13G0wKhucGWiERNloOicAuzQIyd.jpg',
+                    'quality': 'HD',
+                    'rating': 6.1,
+                    'title': 'Los vigilantes',
+                    'views': 179,
+                    'year': '2024'},
+                   {'actors': ['Harriet Slater,',
+                               'Adain Bradley,',
+                               'Avantika,',
+                               'Jacob Batalon,',
+                               'Humberly González,',
+                               'Wolfgang Novogratz,',
+                               'Larsen Thompson,',
+                               'Olwen Fouéré,',
+                               'Sunčica Milanović,',
+                               'Alan Wells,',
+                               'Joss Carter,',
+                               'James Swanton,',
+                               'Staša Nikolić,',
+                               'Anna Halberg,',
+                               'Cavin Cornwall,',
+                               'Lucy Ridley,',
+                               'Felix Leech,',
+                               'Vahidin Prelić,',
+                               'Dunja Pavlović,',
+                               'Višnja Obradović,'],
+                    'country': 'United States',
+                    'description': 'Ver tarot Cuevana3.Un grupo de amigos de '
+                                   'la universidad comienzan a morir de '
+                                   'maneras relacionadas con su fortuna '
+                                   'después de que les lean los horóscopos.',
+                    'director': 'Spenser Cohen',
+                    'duration': '1h 32m',
+                    'genre': ['Terror'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/Adh7xmtgSIUGZBaMj9VLTmq2G8z.jpg',
+                    'quality': 'HD',
+                    'rating': 6.6,
+                    'title': 'Tarot',
+                    'views': 589,
+                    'year': '2024'},
+                   {'actors': ["Lupita Nyong'o,",
+                               'Joseph Quinn,',
+                               'Schnitze,',
+                               'Alex Wolff,',
+                               'Djimon Hounsou,',
+                               'Cain Aiden,',
+                               'Jennifer Woodward,',
+                               'Elijah Ungvary,',
+                               'Nico,'],
+                    'country': 'United States',
+                    'description': 'Ver un lugar tranquilo: día uno '
+                                   'Cuevana3.Una mujer llamada Sam trata de '
+                                   'sobrevivir a una invasión en la ciudad de '
+                                   'Nueva York por criaturas alienígenas '
+                                   'sedientas de sangre con oídos '
+                                   'ultrasónicos. Tercera entrega de la saga.',
+                    'director': 'Michael Sarnoski',
+                    'duration': '1h 39m',
+                    'genre': ['Terror', 'Ciencia ficción', 'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/jGOi939xU8BDRfAAhN6eiTSf3H8.jpg',
+                    'quality': 'HD',
+                    'rating': 7.1,
+                    'title': 'Un lugar tranquilo: Día uno',
+                    'views': 19,
+                    'year': '2024'},
+                   {'actors': ['Chris Pratt,',
+                               'Samuel L. Jackson,',
+                               'Hannah Waddingham,',
+                               'Ving Rhames,',
+                               'Nicholas Hoult,',
+                               'Cecily Strong,',
+                               'Harvey Guillén,',
+                               'Brett Goldstein,',
+                               'Bowen Yang,',
+                               'Snoop Dogg,',
+                               'Janelle James,',
+                               'Angus Cloud,',
+                               'Jeff Foxworthy,',
+                               'Eugenia Caruso,',
+                               'Luke Cinque-White,',
+                               'Dev Joshi,',
+                               'Chana Keefer,',
+                               'Mark Keefer,',
+                               'Edward VL Montgomery,',
+                               'Mark Dindal,',
+                               'Cameron Bernard Jones,'],
+                    'country': 'Hong Kong',
+                    'description': 'Ver garfield: la película Cuevana3.El '
+                                   'mundialmente famoso Garfield, el gato '
+                                   'casero que odia los lunes y que adora la '
+                                   'lasaña, está a punto de vivir una aventura '
+                                   '¡en el salvaje mundo exterior! Tras una '
+                                   'inesperada reunión con su largamente '
+                                   'perdido padre – el desaliñado gato '
+                                   'callejero Vic – Garfield y su amigo canino '
+                                   'Odie se ven forzados a abandonar sus '
+                                   'perfectas y consentidas vidas al unirse a '
+                                   'Vic en un hilarante y muy arriesgado '
+                                   'atraco.',
+                    'director': 'Mark Dindal',
+                    'duration': '1h 41m',
+                    'genre': ['Animación', 'Comedia', 'Familia', 'Aventura'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/6QR2FOCQr41gSduN70WulRIhJb7.jpg',
+                    'quality': 'HD',
+                    'rating': 6.7,
+                    'title': 'Garfield: la película',
+                    'views': 191,
+                    'year': '2024'},
+                   {'actors': ['Molly Kunz,',
+                               'Michael X. Sommers,',
+                               'Colleen Camp,',
+                               'Stefanie Estes,',
+                               'Claire Saunders,',
+                               'William Ford-Conway,',
+                               'Evyn Flanders,'],
+                    'country': 'United States',
+                    'description': 'Ver wild eyed and wicked Cuevana3.Lily '
+                                   'Pierce is sick of being haunted. She '
+                                   'decides to reconnect with her estranged '
+                                   'father, a disgraced history professor, and '
+                                   'learn how to draw upon a time of steel and '
+                                   'blade when armor-clad knights rode out and '
+                                   'dueled their monsters to the death.',
+                    'director': 'Gordon Shoemaker Foxwood',
+                    'duration': '1h 39m',
+                    'genre': ['Terror',
+                              'Fantasía',
+                              'Drama',
+                              'Misterio',
+                              'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/nJMNvYZ21bMdB2Pq0qCk88jnQc6.jpg',
+                    'quality': 'HD',
+                    'rating': 4.6,
+                    'title': 'Wild Eyed and Wicked',
+                    'views': 11,
+                    'year': '2024'},
+                   {'actors': ['Jessica Córes,',
+                               'Bruno Gagliasso,',
+                               'Gabz,',
+                               'Christian Malheiros,',
+                               'Nill Marcondes,',
+                               'Guta Ruiz,',
+                               'Miguel Nader,',
+                               'Márcio Fecher,',
+                               'Nicole Cordery,',
+                               'Emilly Nayara,',
+                               'Miguel Falabella,',
+                               'Klebber Toledo,',
+                               'Paulo Vilhena,',
+                               'Danton Mello,',
+                               'Erika Januza,',
+                               'Kagga Jayson,',
+                               'Luana Tanaka,'],
+                    'country': 'Brazil',
+                    'description': 'Ver biónicos Cuevana3.Dos hermanas '
+                                   'compiten en salto de longitud en un futuro '
+                                   'distópico en el que las prótesis robóticas '
+                                   'han redefinido el deporte. Su rivalidad '
+                                   'las lleva por un siniestro camino.',
+                    'director': 'Afonso Poyart',
+                    'duration': '1h 50m',
+                    'genre': ['Ciencia ficción', 'Acción', 'Aventura'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ns9Tr9fda1YuPK2k6BqwqmEOkgl.jpg',
+                    'quality': 'HD',
+                    'rating': 5.5,
+                    'title': 'Biónicos',
+                    'views': 89,
+                    'year': '2024'},
+                   {'actors': ['Glen Powell,',
+                               'Adria Arjona,',
+                               'Austin Amelio,',
+                               'Retta,',
+                               'Sanjay Rao,',
+                               'Molly Bernard,',
+                               'Evan Holtzman,',
+                               'Gralen Bryant Banks,',
+                               'Mike Markoff,',
+                               'Bryant Carroll,',
+                               'Enrique Bush,',
+                               'Bri Myles,',
+                               'Kate Adair,',
+                               'Martin Bats Bradford,',
+                               'Morgana Shaw,',
+                               'Ritchie Montgomery,',
+                               'Richard Robichaux,',
+                               'Jo-Ann Robinson,',
+                               'Jonas Lerway,',
+                               'Kim Baptiste,',
+                               'Sara Osi Scott,'],
+                    'country': 'United States',
+                    'description': 'Ver hit man. asesino por casualidad '
+                                   'Cuevana3.Gary Johnson es el asesino '
+                                   'profesional más buscado de Nueva Orleans. '
+                                   'Para sus clientes, es el sicario ideal. '
+                                   'Pero si le pagas para que elimine a un '
+                                   'cónyuge infiel o a un jefe maltratador, '
+                                   'será mejor que tengas cuidado: trabaja '
+                                   'para la policía. Cuando rompe el protocolo '
+                                   'para ayudar a una mujer desesperada que '
+                                   'intenta huir de un marido maltratador, se '
+                                   'convierte en uno de sus falsos personajes, '
+                                   'se enamora de la mujer y coquetea con '
+                                   'convertirse él mismo en un criminal.',
+                    'director': 'Richard Linklater',
+                    'duration': '1h 56m',
+                    'genre': ['Romance', 'Comedia', 'Crimen'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/lUA3eDLlgeWORvuuUz3s7vLHa1s.jpg',
+                    'quality': 'HD',
+                    'rating': 7.0,
+                    'title': 'Hit Man. Asesino por casualidad',
+                    'views': 409,
+                    'year': '2024'},
+                   {'actors': ['Jessica Alba,',
+                               'Anthony Michael Hall,',
+                               'Tone Bell,',
+                               'Mark Webber,',
+                               'Jake Weary,',
+                               'Gabriel Basso,',
+                               'Kaiwi Lyman,',
+                               'Hari Dhillon,',
+                               'Alejandro De Hoyos,',
+                               'Nadiv Molcho,',
+                               'Peter Monro,',
+                               'Stephanie Jones,',
+                               'James Cady,',
+                               'Jerry G. Angelo,',
+                               'David DeLao,',
+                               'Kyle Potter,',
+                               'Andrew Franklin,',
+                               'Luis Valladares,',
+                               'Monica Sanchez,',
+                               'Gianna Gallegos,',
+                               'Gabriel Armijo,'],
+                    'country': 'United States',
+                    'description': 'Ver detonantes Cuevana3.Una soldado de las '
+                                   'fuerzas especiales descubre una peligrosa '
+                                   'conspiración cuando regresa a casa en '
+                                   'busca de respuestas sobre la muerte de su '
+                                   'padre.',
+                    'director': 'Mouly Surya',
+                    'duration': '1h 47m',
+                    'genre': ['Acción', 'Crimen', 'Suspense'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/ejlwgCS2SJDFvlTlO8tZYPtCci4.jpg',
+                    'quality': 'HD',
+                    'rating': 5.6,
+                    'title': 'Detonantes',
+                    'views': 159,
+                    'year': '2024'},
+                   {'actors': ['Bill Skarsgård,',
+                               'Jessica Rothe,',
+                               'H. Jon Benjamin,',
+                               'Michelle Dockery,',
+                               'Brett Gelman,',
+                               'Sharlto Copley,',
+                               'Andrew Koji,',
+                               'Isaiah Mustafa,',
+                               'Famke Janssen,',
+                               'Quinn Copeland,',
+                               'Cameron Crovetti,',
+                               'Nicholas Crovetti,',
+                               'Yayan Ruhian,',
+                               'Dorothy Ann Gould,',
+                               'Jane de Wet,',
+                               'Inge Beckmann,',
+                               'Martin Munro,',
+                               'Pierre Nelson,',
+                               'Natalia Aleksandrowa,',
+                               'Shane John Kruger,',
+                               'François Chau,'],
+                    'country': 'United States',
+                    'description': 'Ver boy kills world Cuevana3.Boy (Bill '
+                                   'Skarsgård) es un joven que deberá '
+                                   'enfrentarse a la desquiciada matriarca de '
+                                   'una corrupta dinastía postapocalíptica que '
+                                   'lo dejó huérfano, sordo y sin voz. Tras '
+                                   'vivir una trágica infancia, un enigmático '
+                                   'chamán (Yayan Ruhian) le convertirá en un '
+                                   'instrumento de venganza y lo soltará en su '
+                                   'lejana distopía en vísperas de la matanza '
+                                   'anual de disidentes. Intentando encontrar '
+                                   'su lugar, Boy se unirá a un grupo de '
+                                   'resistencia a la vez que mantendrá '
+                                   'intensas discusiones con el fantasma de su '
+                                   'rebelde hermana pequeña.',
+                    'director': 'Moritz Mohr',
+                    'duration': '1h 50m',
+                    'genre': ['Acción',
+                              'Suspense',
+                              'Crimen',
+                              'Ciencia ficción'],
+                    'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/hgYhI7bzV3IVh4aUzfFi1C1j2sW.jpg',
+                    'quality': 'HD',
+                    'rating': 6.8,
+                    'title': 'Boy Kills World',
+                    'views': 319,
+                    'year': '2024'}]}
+[2024-06-27T16:04:50.868-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-27T16:04:50.868-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T16:04:50.872-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=get_json_from_task1, run_id=scheduled__2024-06-27T00:13:00+00:00, execution_date=20240627T001300, start_date=20240627T200450, end_date=20240627T200450
+[2024-06-27T16:04:50.948-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-27T16:04:50.969-0400] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T16:04:50.977-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

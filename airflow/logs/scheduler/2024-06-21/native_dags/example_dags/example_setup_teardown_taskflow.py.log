@@ -1,0 +1,11 @@
+[2024-06-21T16:10:05.576-0400] {processor.py:161} INFO - Started process (PID=25118) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-06-21T16:10:05.581-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py for tasks to queue
+[2024-06-21T16:10:05.583-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.582-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-06-21T16:10:05.601-0400] {processor.py:840} INFO - DAG(s) 'example_setup_teardown_taskflow' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-06-21T16:10:05.757-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.756-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:example_setup_teardown_taskflow
+[2024-06-21T16:10:05.769-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.769-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:example_setup_teardown_taskflow
+[2024-06-21T16:10:05.779-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.779-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:example_setup_teardown_taskflow
+[2024-06-21T16:10:05.779-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.779-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:10:05.790-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.789-0400] {dag.py:3118} INFO - Creating ORM DAG for example_setup_teardown_taskflow
+[2024-06-21T16:10:05.800-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:05.799-0400] {dag.py:3954} INFO - Setting next_dagrun for example_setup_teardown_taskflow to 2024-06-20 00:00:00+00:00, run_after=2024-06-21 00:00:00+00:00
+[2024-06-21T16:10:05.826-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.262 seconds

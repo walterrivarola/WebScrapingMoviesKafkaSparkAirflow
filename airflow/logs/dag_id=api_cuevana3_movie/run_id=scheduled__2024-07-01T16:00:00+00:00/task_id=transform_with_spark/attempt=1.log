@@ -1,0 +1,17 @@
+[2024-07-01T23:24:55.215-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:24:55.235-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T16:00:00+00:00 [queued]>
+[2024-07-01T23:24:55.242-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T16:00:00+00:00 [queued]>
+[2024-07-01T23:24:55.246-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:24:55.281-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): transform_with_spark> on 2024-07-01 16:00:00+00:00
+[2024-07-01T23:24:55.287-0400] {standard_task_runner.py:63} INFO - Started process 453837 to run task
+[2024-07-01T23:24:55.292-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'transform_with_spark', 'scheduled__2024-07-01T16:00:00+00:00', '--job-id', '883', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpi8neqhx4']
+[2024-07-01T23:24:55.295-0400] {standard_task_runner.py:91} INFO - Job 883: Subtask transform_with_spark
+[2024-07-01T23:24:55.390-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.transform_with_spark scheduled__2024-07-01T16:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:24:55.562-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='transform_with_spark' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T16:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T16:00:00+00:00'
+[2024-07-01T23:24:55.562-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:25:20.328-0400] {python.py:237} INFO - Done. Returned value was: [{'actors': ['Will Smith,', 'Martin Lawrence,', 'Vanessa Hudgens,', 'Alexander Ludwig,', 'Paola Nuñez,', 'Eric Dane,', 'Ioan Gruffudd,', 'Jacob Scipio,', 'Melanie Liburd,', 'Tasha Smith,', 'Rhea Seehorn,', 'Tiffany Haddish,', 'Joe Pantoliano,', 'DJ Khaled,', 'John Salley,', 'Bianca Bethune,', 'Dennis McDonald,', 'Quinn Hemphill,', 'Michael Bay,', 'Derek Russo,', 'Karter Reese Newsome,'], 'country': 'United States', 'description': 'Tras escuchar falsas acusaciones sobre su excapitán y mentor Mike y Marcus deciden investigar el asunto incluso volverse los más buscados de ser necesarios', 'director': 'Adil El Arbi', 'duration': 115, 'genre': ['Acción', 'Crimen', 'Suspense', 'Comedia'], 'image_url': 'https://i0.wp.com/www.themoviedb.org/t/p/w185/5jI2vEHJReAx8iFDmhC2O3yW37w.jpg', 'quality': 'HD', 'rating': 6.9, 'title': 'Bad Boys: Ride or Die', 'views': 460, 'year': '2024'}]
+[2024-07-01T23:25:20.332-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:25:20.388-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=transform_with_spark, run_id=scheduled__2024-07-01T16:00:00+00:00, execution_date=20240701T160000, start_date=20240702T032455, end_date=20240702T032520
+[2024-07-01T23:25:20.517-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:25:20.559-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:25:20.560-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

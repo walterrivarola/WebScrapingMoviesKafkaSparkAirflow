@@ -1,0 +1,11 @@
+[2024-06-21T16:10:14.354-0400] {processor.py:161} INFO - Started process (PID=25162) to work on /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-06-21T16:10:14.356-0400] {processor.py:830} INFO - Processing file /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2024-06-21T16:10:14.358-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.358-0400] {dagbag.py:545} INFO - Filling up the DagBag from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-06-21T16:10:14.367-0400] {processor.py:840} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2024-06-21T16:10:14.459-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.458-0400] {override.py:1829} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2024-06-21T16:10:14.476-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.475-0400] {override.py:1829} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2024-06-21T16:10:14.486-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.486-0400] {override.py:1829} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2024-06-21T16:10:14.486-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.486-0400] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-21T16:10:14.496-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.496-0400] {dag.py:3118} INFO - Creating ORM DAG for latest_only_with_trigger
+[2024-06-21T16:10:14.502-0400] {logging_mixin.py:188} INFO - [2024-06-21T16:10:14.502-0400] {dag.py:3954} INFO - Setting next_dagrun for latest_only_with_trigger to 2024-06-21 16:00:00+00:00, run_after=2024-06-21 20:00:00+00:00
+[2024-06-21T16:10:14.522-0400] {processor.py:183} INFO - Processing /home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.182 seconds

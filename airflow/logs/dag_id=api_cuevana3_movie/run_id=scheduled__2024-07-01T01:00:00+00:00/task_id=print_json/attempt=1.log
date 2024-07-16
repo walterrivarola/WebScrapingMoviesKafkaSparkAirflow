@@ -1,0 +1,48 @@
+[2024-07-01T21:25:18.671-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T21:25:18.703-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [queued]>
+[2024-07-01T21:25:18.723-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [queued]>
+[2024-07-01T21:25:18.724-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T21:25:18.780-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 01:00:00+00:00
+[2024-07-01T21:25:18.788-0400] {standard_task_runner.py:63} INFO - Started process 431043 to run task
+[2024-07-01T21:25:18.794-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T01:00:00+00:00', '--job-id', '785', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpr1h25gyq']
+[2024-07-01T21:25:18.796-0400] {standard_task_runner.py:91} INFO - Job 785: Subtask print_json
+[2024-07-01T21:25:18.872-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T21:25:19.130-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T01:00:00+00:00'
+[2024-07-01T21:25:19.131-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T21:25:19.180-0400] {logging_mixin.py:188} INFO - No se pudo obtener el JSON de datos de la pelicula
+[2024-07-01T21:25:19.181-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T21:25:19.181-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T21:25:19.189-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T01:00:00+00:00, execution_date=20240701T010000, start_date=20240702T012518, end_date=20240702T012519
+[2024-07-01T21:25:19.322-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T21:25:19.361-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T21:25:19.364-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T23:03:44.391-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:03:44.420-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [queued]>
+[2024-07-01T23:03:44.429-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [queued]>
+[2024-07-01T23:03:44.430-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:03:44.480-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 01:00:00+00:00
+[2024-07-01T23:03:44.505-0400] {standard_task_runner.py:63} INFO - Started process 444790 to run task
+[2024-07-01T23:03:44.514-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T01:00:00+00:00', '--job-id', '815', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpgoscxxfp']
+[2024-07-01T23:03:44.516-0400] {standard_task_runner.py:91} INFO - Job 815: Subtask print_json
+[2024-07-01T23:03:44.581-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T01:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:03:44.715-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T01:00:00+00:00'
+[2024-07-01T23:03:44.716-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:03:44.738-0400] {logging_mixin.py:188} INFO - ('{"image_url": '
+ '"https://i0.wp.com/www.themoviedb.org/t/p/w185/Adh7xmtgSIUGZBaMj9VLTmq2G8z.jpg", '
+ '"title": "Tarot", "rating": 6.6, "duration": "1h 32m", "year": "2024", '
+ '"quality": "HD", "description": "Ver tarot Cuevana3.Un grupo de amigos de la '
+ 'universidad comienzan a morir de maneras relacionadas con su fortuna '
+ 'despu\\u00e9s de que les lean los hor\\u00f3scopos.", "genre": ["Terror"], '
+ '"country": "United States", "director": "Spenser Cohen", "actors": ["Harriet '
+ 'Slater,", "Adain Bradley,", "Avantika,", "Jacob Batalon,", "Humberly '
+ 'Gonz\\u00e1lez,", "Wolfgang Novogratz,", "Larsen Thompson,", "Olwen '
+ 'Fou\\u00e9r\\u00e9,", "Sun\\u010dica Milanovi\\u0107,", "Alan Wells,", "Joss '
+ 'Carter,", "James Swanton,", "Sta\\u0161a Nikoli\\u0107,", "Anna Halberg,", '
+ '"Cavin Cornwall,", "Lucy Ridley,", "Felix Leech,", "Vahidin Preli\\u0107,", '
+ '"Dunja Pavlovi\\u0107,", "Vi\\u0161nja Obradovi\\u0107,"], "views": 612}')
+[2024-07-01T23:03:44.739-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:03:44.739-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:03:44.747-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T01:00:00+00:00, execution_date=20240701T010000, start_date=20240702T030344, end_date=20240702T030344
+[2024-07-01T23:03:44.820-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:03:44.834-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:03:44.838-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,137 @@
+[2024-07-02T09:40:59.858-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T09:40:59.877-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T09:40:59.881-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T09:40:59.881-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T09:40:59.929-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 00:01:15+00:00
+[2024-07-02T09:40:59.941-0400] {standard_task_runner.py:63} INFO - Started process 483068 to run task
+[2024-07-02T09:40:59.944-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T00:01:15+00:00', '--job-id', '970', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpuzy2kgkv']
+[2024-07-02T09:40:59.946-0400] {standard_task_runner.py:91} INFO - Job 970: Subtask execute_post_details_fasapi
+[2024-07-02T09:41:00.025-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T09:41:00.189-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:01:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:01:15+00:00'
+[2024-07-02T09:41:00.193-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T09:41:00.248-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T09:41:00.249-0400] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 495, in _make_request
+    conn.request(
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 398, in request
+    self.endheaders()
+  File "/usr/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 236, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connection.py", line 211, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x72450b4197c0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /scraper-movies-details (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72450b4197c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/airflow/dags/movie_recommend.py", line 57, in execute_post_details_fasapi
+    response = requests.post(api_url)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walter/Documentos/rakuntentv/venv/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /scraper-movies-details (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72450b4197c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-07-02T09:41:00.263-0400] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T00:01:15+00:00, execution_date=20240701T000115, start_date=20240702T134059, end_date=20240702T134100
+[2024-07-02T09:41:00.281-0400] {standard_task_runner.py:110} ERROR - Failed to execute job 970 for task execute_post_details_fasapi (HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /scraper-movies-details (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x72450b4197c0>: Failed to establish a new connection: [Errno 111] Connection refused')); 483068)
+[2024-07-02T09:41:00.310-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-07-02T09:41:00.348-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T09:41:00.362-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T10:41:20.885-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T10:41:20.903-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T10:41:20.907-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T10:41:20.907-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T10:41:20.948-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 00:01:15+00:00
+[2024-07-02T10:41:20.959-0400] {standard_task_runner.py:63} INFO - Started process 497996 to run task
+[2024-07-02T10:41:20.964-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T00:01:15+00:00', '--job-id', '1175', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp8gxtd0tw']
+[2024-07-02T10:41:20.966-0400] {standard_task_runner.py:91} INFO - Job 1175: Subtask execute_post_details_fasapi
+[2024-07-02T10:41:21.062-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T10:41:21.205-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:01:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:01:15+00:00'
+[2024-07-02T10:41:21.206-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T10:41:21.219-0400] {logging_mixin.py:188} INFO - Error al obtener los detalles de las peliculas: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /scraper-movies-details (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x721a26674d40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-07-02T10:41:21.219-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T10:41:21.220-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T10:41:21.223-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T00:01:15+00:00, execution_date=20240701T000115, start_date=20240702T144120, end_date=20240702T144121
+[2024-07-02T10:41:21.273-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T10:41:21.286-0400] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T10:41:21.315-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-02T10:57:24.392-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-02T10:57:24.411-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T10:57:24.415-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [queued]>
+[2024-07-02T10:57:24.415-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-02T10:57:24.432-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 00:01:15+00:00
+[2024-07-02T10:57:24.438-0400] {standard_task_runner.py:63} INFO - Started process 500910 to run task
+[2024-07-02T10:57:24.441-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T00:01:15+00:00', '--job-id', '1332', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmphnmisu8t']
+[2024-07-02T10:57:24.442-0400] {standard_task_runner.py:91} INFO - Job 1332: Subtask execute_post_details_fasapi
+[2024-07-02T10:57:24.521-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T00:01:15+00:00 [running]> on host walter-VirtualBox
+[2024-07-02T10:57:24.599-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:01:15+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:01:15+00:00'
+[2024-07-02T10:57:24.600-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-02T10:57:24.616-0400] {logging_mixin.py:188} INFO - Error al obtener los detalles de las peliculas: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /scraper-movies-details (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x78130a95ce60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-07-02T10:57:24.616-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-02T10:57:24.616-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-02T10:57:24.626-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T00:01:15+00:00, execution_date=20240701T000115, start_date=20240702T145724, end_date=20240702T145724
+[2024-07-02T10:57:24.670-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-02T10:57:24.684-0400] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2024-07-02T10:57:24.723-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

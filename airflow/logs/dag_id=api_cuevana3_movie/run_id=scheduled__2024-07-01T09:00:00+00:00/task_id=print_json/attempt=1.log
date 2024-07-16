@@ -1,0 +1,35 @@
+[2024-07-01T23:16:48.969-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:16:48.986-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T09:00:00+00:00 [queued]>
+[2024-07-01T23:16:48.993-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T09:00:00+00:00 [queued]>
+[2024-07-01T23:16:48.993-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:16:49.018-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_json> on 2024-07-01 09:00:00+00:00
+[2024-07-01T23:16:49.023-0400] {standard_task_runner.py:63} INFO - Started process 449713 to run task
+[2024-07-01T23:16:49.026-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'print_json', 'scheduled__2024-07-01T09:00:00+00:00', '--job-id', '855', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp68zv1629']
+[2024-07-01T23:16:49.028-0400] {standard_task_runner.py:91} INFO - Job 855: Subtask print_json
+[2024-07-01T23:16:49.065-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.print_json scheduled__2024-07-01T09:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:16:49.125-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='print_json' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T09:00:00+00:00'
+[2024-07-01T23:16:49.125-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:16:49.140-0400] {logging_mixin.py:188} INFO - ('{"image_url": '
+ '"https://i0.wp.com/www.themoviedb.org/t/p/w185/6BcxgP05jDip4Zjh2P5Be2aNi0Z.jpg", '
+ '"title": "Gru 4. Mi villano favorito", "rating": 8.6, "duration": "1h 35m", '
+ '"year": "2024", "quality": "HD", "description": "Ver gru 4. mi villano '
+ 'favorito Cuevana3.Gru, Lucy y las ni\\u00f1as -Margo, Edith y Agnes- dan la '
+ 'bienvenida a un nuevo miembro en la familia: Gru Junior, que parece llegar '
+ 'con el prop\\u00f3sito de ser un suplicio para su padre. Gru tendr\\u00e1 '
+ 'que enfrentarse en esta ocasi\\u00f3n a su nueva n\\u00e9mesis Maxime Le Mal '
+ 'y su sofisticada y mal\\u00e9vola novia Valentina, lo que obligar\\u00e1 a '
+ "la familia a tener que darse a la fuga. Cuarta entrega de 'Gru, mi villano "
+ 'favorito\'.", "genre": ["Animaci\\u00f3n", "Familia", "Comedia", '
+ '"Acci\\u00f3n"], "country": "United States", "director": "Chris Renaud", '
+ '"actors": ["Steve Carell,", "Kristen Wiig,", "Will Ferrell,", "Sof\\u00eda '
+ 'Vergara,", "Joey King,", "Stephen Colbert,", "Chloe Fineman,", "Miranda '
+ 'Cosgrove,", "Dana Gaier,", "Madison Polan,", "Pierre Coffin,", "Steve '
+ 'Coogan,", "Chris Renaud,", "Jason Segel,", "Benjamin Bratt,", "Trey '
+ 'Parker,", "Sandra Bullock,", "Jon Hamm,", "Taraji P. Henson,", "Russell '
+ 'Brand,"], "views": 65}')
+[2024-07-01T23:16:49.141-0400] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-01T23:16:49.141-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:16:49.144-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=print_json, run_id=scheduled__2024-07-01T09:00:00+00:00, execution_date=20240701T090000, start_date=20240702T031648, end_date=20240702T031649
+[2024-07-01T23:16:49.166-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:16:49.179-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:16:49.181-0400] {local_task_job_runner.py:222} INFO - ::endgroup::

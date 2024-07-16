@@ -1,0 +1,37 @@
+[2024-07-01T20:18:25.232-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T20:18:25.251-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T20:18:25.257-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T20:18:25.258-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T20:18:25.296-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 14:00:00+00:00
+[2024-07-01T20:18:25.303-0400] {standard_task_runner.py:63} INFO - Started process 415651 to run task
+[2024-07-01T20:18:25.305-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T14:00:00+00:00', '--job-id', '730', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmp3anp989l']
+[2024-07-01T20:18:25.307-0400] {standard_task_runner.py:91} INFO - Job 730: Subtask execute_post_details_fasapi
+[2024-07-01T20:18:25.356-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T20:18:25.466-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T14:00:00+00:00'
+[2024-07-01T20:18:25.468-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T20:29:06.522-0400] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2024-07-01T20:29:06.523-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-01T20:29:06.537-0400] {process_utils.py:132} INFO - Sending 15 to group 415651. PIDs of all processes in the group: [415651]
+[2024-07-01T20:29:06.540-0400] {process_utils.py:87} INFO - Sending the signal 15 to group 415651
+[2024-07-01T20:29:06.541-0400] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-07-01T20:29:06.555-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T20:29:06.644-0400] {process_utils.py:80} INFO - Process psutil.Process(pid=415651, status='terminated', exitcode=0, started='20:18:24') (415651) terminated with exit code 0
+[2024-07-01T23:20:54.863-0400] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-01T23:20:54.875-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T23:20:54.880-0400] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [queued]>
+[2024-07-01T23:20:54.880-0400] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-01T23:20:54.897-0400] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): execute_post_details_fasapi> on 2024-07-01 14:00:00+00:00
+[2024-07-01T23:20:54.903-0400] {standard_task_runner.py:63} INFO - Started process 451513 to run task
+[2024-07-01T23:20:54.906-0400] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'api_cuevana3_movie', 'execute_post_details_fasapi', 'scheduled__2024-07-01T14:00:00+00:00', '--job-id', '872', '--raw', '--subdir', 'DAGS_FOLDER/movie_recommend.py', '--cfg-path', '/tmp/tmpy5jdu2jm']
+[2024-07-01T23:20:54.908-0400] {standard_task_runner.py:91} INFO - Job 872: Subtask execute_post_details_fasapi
+[2024-07-01T23:20:54.940-0400] {task_command.py:426} INFO - Running <TaskInstance: api_cuevana3_movie.execute_post_details_fasapi scheduled__2024-07-01T14:00:00+00:00 [running]> on host walter-VirtualBox
+[2024-07-01T23:20:55.015-0400] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='api_cuevana3_movie' AIRFLOW_CTX_TASK_ID='execute_post_details_fasapi' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T14:00:00+00:00'
+[2024-07-01T23:20:55.015-0400] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-01T23:21:48.991-0400] {logging_mixin.py:188} INFO - Scraping movie details running successfully
+[2024-07-01T23:21:49.027-0400] {logging_mixin.py:188} INFO - {"image_url": "https://i0.wp.com/www.themoviedb.org/t/p/w185/Adh7xmtgSIUGZBaMj9VLTmq2G8z.jpg", "title": "Tarot", "rating": 6.6, "duration": "1h 32m", "year": "2024", "quality": "HD", "description": "Ver tarot Cuevana3.Un grupo de amigos de la universidad comienzan a morir de maneras relacionadas con su fortuna despu\u00e9s de que les lean los hor\u00f3scopos.", "genre": ["Terror"], "country": "United States", "director": "Spenser Cohen", "actors": ["Harriet Slater,", "Adain Bradley,", "Avantika,", "Jacob Batalon,", "Humberly Gonz\u00e1lez,", "Wolfgang Novogratz,", "Larsen Thompson,", "Olwen Fou\u00e9r\u00e9,", "Sun\u010dica Milanovi\u0107,", "Alan Wells,", "Joss Carter,", "James Swanton,", "Sta\u0161a Nikoli\u0107,", "Anna Halberg,", "Cavin Cornwall,", "Lucy Ridley,", "Felix Leech,", "Vahidin Preli\u0107,", "Dunja Pavlovi\u0107,", "Vi\u0161nja Obradovi\u0107,"], "views": 612}
+[2024-07-01T23:21:49.035-0400] {python.py:237} INFO - Done. Returned value was: {"image_url": "https://i0.wp.com/www.themoviedb.org/t/p/w185/Adh7xmtgSIUGZBaMj9VLTmq2G8z.jpg", "title": "Tarot", "rating": 6.6, "duration": "1h 32m", "year": "2024", "quality": "HD", "description": "Ver tarot Cuevana3.Un grupo de amigos de la universidad comienzan a morir de maneras relacionadas con su fortuna despu\u00e9s de que les lean los hor\u00f3scopos.", "genre": ["Terror"], "country": "United States", "director": "Spenser Cohen", "actors": ["Harriet Slater,", "Adain Bradley,", "Avantika,", "Jacob Batalon,", "Humberly Gonz\u00e1lez,", "Wolfgang Novogratz,", "Larsen Thompson,", "Olwen Fou\u00e9r\u00e9,", "Sun\u010dica Milanovi\u0107,", "Alan Wells,", "Joss Carter,", "James Swanton,", "Sta\u0161a Nikoli\u0107,", "Anna Halberg,", "Cavin Cornwall,", "Lucy Ridley,", "Felix Leech,", "Vahidin Preli\u0107,", "Dunja Pavlovi\u0107,", "Vi\u0161nja Obradovi\u0107,"], "views": 612}
+[2024-07-01T23:21:49.035-0400] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-01T23:21:49.081-0400] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=api_cuevana3_movie, task_id=execute_post_details_fasapi, run_id=scheduled__2024-07-01T14:00:00+00:00, execution_date=20240701T140000, start_date=20240702T032054, end_date=20240702T032149
+[2024-07-01T23:21:49.115-0400] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-01T23:21:49.131-0400] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-01T23:21:49.133-0400] {local_task_job_runner.py:222} INFO - ::endgroup::
